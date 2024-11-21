@@ -12,9 +12,10 @@
 <body>
     <header>
         <nav>
-            <a id="hamburger" href="javascript:void(0)" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</a>
+            <a id="hamburger" href="javascript:void(0)" onclick="openNav()">&#9776;</a>
             <a href="#">Trion</a>
-            <a class="User-Icon" href="#">Profile</a>
+            <a class="cart" href="#"><img src="icons/cart-(smaller).jpeg" alt="Cart"></a>
+            <a class="User-Icon" href="#"><img src="icons/profile-(smaller).jpeg" alt=""></a>
         </nav>
     </header>
     <div id="sidebar" class="sidenav">
@@ -49,20 +50,22 @@
         
     </main>
     <footer>
-        <p>About Us</p>
+        <div class="footer">
+            <p>Cars</p>
+            <p>Merchandise</p>
+            <p>Help</p>
+            <p>Profile</p>
+            <p>About Us</p>
+        </div>
+        <div class="socials">
+            <p>Socials</p>
+            <a id="ig" href="instagram.com" alt="Instagram Logo"><img src="icons/ig.jpeg" alt=""></a>
+            <a id="icons" href="facebook.com" alt="Facebook Logo"><img src="icons/fb.jpeg"></a>
+            <a id="icons" href="x.com" alt="X Logo"><img src="icons/x.jpeg"></a>
+            <a id="icons" href="youtube.com" alt="Youtube Logo"><img src="icons/yt.jpeg"></a>
+        </div>
     </footer>
-    <script>
-        const sidebar = document.querySelector('#sidebar')
-        const hamburger = document.querySelector('#hamburger')
-
-        document.addEventListener('click', e => {
-        // test.insertAdjacentHTML = e.target    
-        if(!sidebar.contains(e.target) && !hamburger.contains(e.target)){
-            closeNav()
-            // document.writeln(e.target)
-        }
-        })
-    </script>
+    
 </body>
 
 </html>

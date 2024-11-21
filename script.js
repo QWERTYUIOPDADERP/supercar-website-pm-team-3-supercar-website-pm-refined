@@ -15,3 +15,14 @@ function closeNav() {
   document.getElementById("sidebar").style.visibility="hidden";  
   // }, 500);
 }
+
+const sidebar = document.querySelector('#sidebar')
+const hamburger = document.querySelector('#hamburger')
+
+  document.addEventListener('click', e => {
+  // test.insertAdjacentHTML = e.target    
+  if(!sidebar.contains(e.target) && !hamburger.contains(e.target)){
+      closeNav()
+      // document.writeln(e.target)
+    }
+    })
