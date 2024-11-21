@@ -10,23 +10,31 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a id="hamburger" href="javascript:void(0)" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</a>
+            <a href="#">Trion</a>
+            <a class="Cart" href="#">Cart</a>
+            <a class="User-Icon" href="#">Profile</a>
+        </nav>
+    </header>
     <div id="sidebar" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
         <ul>
-            <li><a href="#">Cars</a>
+            <li><a href="#">Cars >></a>
                 <ul class="dropdown" aria-label="submenu">
                     <li><a href="#">Nemesis</a></li>
                     <li><a href="#">Black Widow</a></li>
                 </ul>
             </li>
-            <li><a href="#">Merchandise</a>
+            <li><a href="#">Merchandise >></a>
                 <ul class="dropdown" aria-label="submenu">
                     <li><a href="#">Men's</a></li>
                     <li><a href="#">Women's</a></li>
                     <li><a href="#">Other</a></li>
                 </ul>
             </li>
-            <li><a href="#">Account</a>
+            <li><a href="#">Account >></a>
                 <ul class="dropdown" aria-label="submenu">
                     <li><a href="#">Account Settings</a></li>
                     <li><a href="#">Concierge</a></li>
@@ -38,17 +46,24 @@
             <li><a href="#">Cart</a></li>
         </ul>
     </div>
-    <header>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        <nav>
-            <a href="#">Trion</a>
-            <a class="Cart" href="#">Cart</a>
-            <a class="User-Icon" href="#">Profile</a>
-        </nav>
-    </header>
+    <main>
+        
+    </main>
     <footer>
         <p>About Us</p>
     </footer>
+    <script>
+        const sidebar = document.querySelector('#sidebar')
+        const hamburger = document.querySelector('#hamburger')
+
+        document.addEventListener('click', e => {
+        // test.insertAdjacentHTML = e.target    
+        if(!sidebar.contains(e.target) && !hamburger.contains(e.target)){
+            closeNav()
+            // document.writeln(e.target)
+        }
+        })
+    </script>
 </body>
 
 </html>
