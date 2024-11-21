@@ -1,7 +1,6 @@
 function openNav() {
   document.getElementById("sidebar").style.width = "25%";
   // document.getElementById("body").style.marginLeft = "25%";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   document.getElementById("sidebar").style.visibility="visible";
   setTimeout(() => {
     document.getElementById("close").focus();
@@ -12,7 +11,6 @@ function openNav() {
 function closeNav() {
   document.getElementById("sidebar").style.width = "0";
   // document.getElementById("header").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
   // setTimeout(() => {
   document.getElementById("sidebar").style.visibility="hidden";  
   // }, 500);
