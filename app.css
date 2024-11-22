@@ -278,7 +278,7 @@ footer a:focus > img{
   height: 100vh;
   background-position-y: -50vh;
   background-position-x: -5vh;
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 .fullScreen{
