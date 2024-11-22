@@ -14,7 +14,11 @@
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 6vh;
+}
+
+.sidenav > ul > li{
+  margin: 2vh 0;
 }
 
 .sidenav ul,
@@ -24,9 +28,9 @@ nav ul{
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 0.5vh 10%;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 2rem;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -40,15 +44,14 @@ nav ul{
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  font-size: 2.5rem;
 }
 
 .sidenav li:hover,
 .sidenav li:focus-within {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .dropdown{
@@ -66,7 +69,7 @@ li:focus-within a {
 .sidenav ul li:focus-within > ul,
 .sidenav ul li ul:hover,
 .sidenav ul li ul:focus {
-  max-height: 200px;
+  max-height: 400px;
   opacity: 1;
   display: block;
   transition: all 0.6s
@@ -81,13 +84,12 @@ nav{
   top:0;
   left:0;
   position: fixed;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 80%);
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 5vh;
   width: 100%;
-  opacity: 90%;
 }
 
 nav a{
@@ -115,11 +117,6 @@ nav a > img{
   border-radius: 100%;
 }
 
-footer a > img{
-  width: 200px;
-  border-radius: 5%;
-}
-
 nav a:nth-child(1){
   margin-left: 1.5%;
 }
@@ -141,15 +138,23 @@ body{
 }
 
 #hamburger {
+  padding:0;
+  margin-left: 2%;
   font-size:30px;
   cursor:pointer;
 }
 
+#hamburger img{
+  border-radius: 0;
+  filter: invert(1);
+}
+
 footer{
+  background-color: #212331;
   display: flex;
   flex-flow: column nowrap;
   /* padding: 20px; */
-  height: auto;
+  height: fit-content;
   justify-content: flex-start;
   align-items: center;
 }
@@ -158,17 +163,17 @@ footer{
   margin-top: 4vh;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 3vh;
   padding: 0;
 }
 
 .links > li{
   margin-top: 3vh;
   padding: 0;
-  width: 18%;
+  width: 15%;
 }
 
 hr{
@@ -195,7 +200,7 @@ hr{
 
 .links ul{
   margin: 1vh 0;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   text-align: center;
   align-items: center;
   display: flex;
@@ -208,32 +213,75 @@ hr{
 }
 
 .socialWrapper{
-  margin-top: 4vh;
+  margin: 4vh 0;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   width: 100%;
+  height: fit-content;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 3vh;
 }
 
 .socials{
-  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-top: 2vh;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
+  height: auto;
   color: #ffffff;
   font-size: 4vh;
   padding-left: 0;
 }
 
+.socials li{
+  margin: 0 2.5%;
+  height: auto;
+}
+
 .socials img{
-  outline: 0px;
+  outline: none;
   transform: translateY(2vh);
 }
 
 .socials a:hover,
-.socials a:focus{
-  outline: 6px skyblue solid;
+.socials a:focus  {
+  border-radius: 6%;
+}
+
+footer a > img{
+  filter: invert(0.6);
+  width: 100px;
+  border-radius: 5%;
+  transition: all 0.2s;
+}
+
+footer a:hover > img,
+footer a:focus > img{
+  filter: invert(1);
+  transition: all 0.2s;
+}
+
+#trionName{
+  color: white;
+}
+
+.heroImage{
+  background-image: url(images/homepage/black-ops1.jpg);
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  object-fit: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position-y: -50vh;
+  background-position-x: -5vh;
+  scale: 1.2;
+}
+
+.fullScreen{
+  background-color: transparent;
+  height: 100vh;
 }

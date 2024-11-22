@@ -12,11 +12,11 @@
 <body>
     <header>
         <nav>
-            <a id="hamburger" href="javascript:void(0)" onclick="openNav()">&#9776;</a>
-            <a href="#">Trion</a>
+            <a id="hamburger" href="javascript:void(0)" onclick="openNavWithFocus('close')"><img src="icons/menu.png"></img></a>
+            <a id="trionName" href="index.html">Trion</a>
             <div>
-                <a class="cart" href="#"><img src="icons/cart.png" alt="Cart"></a>
-                <a class="User-Icon" href="#"><img src="icons/account.png" alt="Profile"></a>
+                <a id="cartButton" href="#"><img src="icons/cart.png" alt="Cart"></a>
+                <a id="user" href="#"><img src="icons/account.png" onclick="openNavWithFocus('account')" alt="Profile"></a>
             </div>
         </nav>
     </header>
@@ -36,7 +36,7 @@
                     <li><a href="#">Other</a></li>
                 </ul>
             </li>
-            <li><a href="#">Account >></a>
+            <li><a href="#" id="account">Account >></a>
                 <ul class="dropdown" aria-label="submenu">
                     <li><a href="#">Account Settings</a></li>
                     <li><a href="#">Concierge</a></li>
@@ -45,20 +45,13 @@
                 </ul>
             </li>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Cart</a></li>
         </ul>
     </div>
+    <section class="heroRow">
+        <div class="heroImage"></div>
+        <div class="fullScreen"></div>
+    </section>
     <main>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>this is the main section</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        
     </main>
     <footer>
         <hr>
@@ -98,19 +91,21 @@
         <div class="socialWrapper">
             <p>Socials</p>
             <ul class="socials">
-                <li><a id="icons" href="instagram.com" alt="Instagram Logo"><img src="icons/ig.jpeg" alt=""></a></li>
-                <li><a id="icons" href="facebook.com" alt="Facebook Logo"><img src="icons/fb.jpeg"></a></li>
-                <li><a id="icons" href="x.com" alt="X Logo"><img src="icons/x.jpeg"></a></li>
-                <li><a id="icons" href="youtube.com" alt="Youtube Logo"><img src="icons/yt.jpeg"></a></li>
+                <li><a id="icons" href="instagram.com" alt="Instagram Logo"><img src="icons/instagram.png" alt=""></a></li>
+                <li><a id="icons" href="facebook.com" alt="Facebook Logo"><img src="icons/facebook.png"></a></li>
+                <li><a id="icons" href="x.com" alt="X Logo"><img src="icons/twitter.png"></a></li>
+                <li><a id="icons" href="linkedin.com" alt="LinkenIn Logo"><img src="icons/linkedin.png"></a></li>
             </ul>
         </div>
     </footer>
     <script>
         const sidebar = document.querySelector('#sidebar')
         const hamburger = document.querySelector('#hamburger')
+        const cart = document.querySelector('#cartButton')
+        const account = document.querySelector('#user')
         document.addEventListener('click', e => {
         // test.insertAdjacentHTML = e.target    
-            if(!sidebar.contains(e.target) && !hamburger.contains(e.target)){
+            if(!sidebar.contains(e.target) && !hamburger.contains(e.target) && !cart.contains(e.target) && !account.contains(e.target)){
                 closeNav()
                 // document.writeln(e.target)
             }
