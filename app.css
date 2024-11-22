@@ -237,3 +237,7 @@ hr{
 .socials a:focus{
   outline: 6px skyblue solid;
 }
+
+main {
+  color: white;
+}
