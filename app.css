@@ -285,3 +285,29 @@ footer a:focus > img{
   background-color: transparent;
   height: 100vh;
 }
+
+/* About Us Page */
+
+.aboutheroText {
+  font-size: 96px;
+  color: red;
+  background-color: white;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.aboutheroImage{
+  background-image: url(images/homepage/black-ops1.jpg);
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  object-fit: cover;
+  background-size: cover;
+  height: 100vh;
+  background-position-y: -50vh;
+  background-position-x: -5vh;
+  transform: scale(1.2);
+}

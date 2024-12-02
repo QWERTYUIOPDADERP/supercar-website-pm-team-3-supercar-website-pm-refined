@@ -25,3 +25,15 @@ function closeNav() {
   document.getElementById("sidebar").style.visibility = "hidden";  
   // }, 500);
 }
+
+const sidebar = document.querySelector('#sidebar')
+        const hamburger = document.querySelector('#hamburger')
+        const cart = document.querySelector('#cartButton')
+        const account = document.querySelector('#user')
+        document.addEventListener('click', e => {
+        // test.insertAdjacentHTML = e.target    
+            if(!sidebar.contains(e.target) && !hamburger.contains(e.target) && !cart.contains(e.target) && !account.contains(e.target)){
+                closeNav()
+                // document.writeln(e.target)
+            }
+        })
