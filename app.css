@@ -1,5 +1,6 @@
 *{
   margin: 0;
+  box-sizing: border-box;
 }
 
 .sidenav {
@@ -265,23 +266,186 @@ footer a:focus > img{
 }
 
 #trionName{
+  height: auto;
   color: white;
+  font-size: 48px;
 }
 
 .heroImage{
   background-image: url(images/homepage/black-ops1.jpg);
-  width: 100%;
+  min-width: 100%;
   position: fixed;
   z-index: -1;
-  object-fit: cover;
+  /* object-fit: cover; */
   background-size: cover;
+  background-repeat: no-repeat;
+  /* min-height: 100vh; */
   height: 100vh;
-  background-position-y: -50vh;
-  background-position-x: -5vh;
-  transform: scale(1.2);
+  background-position-y: bottom;
+  background-position-x: center;
+  /* translate: 0 -15vh; */
+  /* transform: scale(1.2); */
+}
+
+main{
+  padding: 8vh;
+  background-color: #212331;
 }
 
 .fullScreen{
   background-color: transparent;
   height: 100vh;
+}
+
+.slideContent{
+  background-color: #323443;
+  width: 100%;
+  align-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  color: white;
+}
+
+.slideItem{
+  height: 100%;
+  width: 50%;
+  flex: 1;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  height: 70vh;
+  display: none;
+  object-fit: cover;
+}
+
+.slideContent img{
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.column{
+  padding: 5%;
+}
+
+.arrow-pulse-down:after {
+  content: "🡣"; /* Here you can change the style of the arrow */
+  color: white;
+  position: absolute;
+  width: 35px; height: 35px;
+  margin: 0 auto;
+  left: 0; right: 0;
+  font-size: 35px;
+  animation: arrow-pulse-down 1000ms linear infinite;
+}
+@keyframes arrow-pulse-down {
+  0% {
+    bottom: 50px;
+    opacity: 0;
+  }
+  20% {
+    opacity: .1;
+  }
+  30% {
+    opacity: .2;
+  }
+  45% {
+    opacity: .3;
+  }
+  70% {
+    bottom: 5px;
+    opacity: .4;
+  }
+  95% {
+    bottom: -20px;
+    opacity: .5;
+  }
+  100% {
+    bottom: -20px;
+    opacity: .5;
+  }
 }
