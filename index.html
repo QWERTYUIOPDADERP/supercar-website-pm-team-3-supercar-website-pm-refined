@@ -16,27 +16,27 @@
             <a id="trionName" href="index.html">Trion</a>
             <div>
                 <a id="cartButton" href="#"><img src="icons/cart.png" alt="Cart"></a>
-                <a id="user" href="#"><img src="icons/account.png" onclick="openNavWithFocus('account')" alt="Profile"></a>
+                <a id="user" href="javascript:void(0)"><img src="icons/account.png" onclick="openNavWithFocus('account')" alt="Profile"></a>
             </div>
         </nav>
     </header>
     <div id="sidebar" class="sidenav">
         <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
         <ul>
-            <li><a href="#">Cars >></a>
+            <li><a href="javascript:void(0)">Cars >></a>
                 <ul class="dropdown" aria-label="submenu">
                     <li><a href="#">Nemesis</a></li>
                     <li><a href="#">Black Widow</a></li>
                 </ul>
             </li>
-            <li><a href="#">Merchandise >></a>
+            <li><a href="javascript:void(0)">Merchandise >></a>
                 <ul class="dropdown" aria-label="submenu">
                     <li><a href="#">Men's</a></li>
                     <li><a href="#">Women's</a></li>
                     <li><a href="#">Other</a></li>
                 </ul>
             </li>
-            <li><a href="#" id="account">Account >></a>
+            <li><a href="javascript:void(0)" id="account">Account >></a>
                 <ul class="dropdown" aria-label="submenu">
                     <li><a href="#">Account Settings</a></li>
                     <li><a href="#">Concierge</a></li>
@@ -66,7 +66,7 @@
                         <a href="#"> Button </a>
                     </div>
                 </div>
-                <div class="text">Caption Text</div>
+                <!-- <div class="text">Caption Text</div> -->
             </div>
         
             <div class="mySlides fade">
@@ -78,7 +78,7 @@
                         <a href="#"> Not A Button </a>
                     </div>
                 </div>
-                <div class="text">Caption Text</div>
+                <!-- <div class="text">Caption Text</div> -->
             </div>
 
             <div class="mySlides fade">
@@ -90,7 +90,7 @@
                         <a href="#"> Button? </a>
                     </div>
                 </div>
-                <div class="text">Caption Text</div>
+                <!-- <div class="text">Caption Text</div> -->
             </div>
 
             <div class="mySlides fade">
@@ -102,21 +102,21 @@
                         <a href="#"> !!! </a>
                     </div>
                 </div>
-                <div class="text">Caption Text</div>
+                <!-- <div class="text">Caption Text</div> -->
             </div>
         
             <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a href="javascript:void(0)" class="prev" id="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a href="javascript:void(0)" class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
         
         <!-- The dots/circles -->
         <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
+            <a href="javascript:void(0)" class="dot" onclick="currentSlide(1)"></a>
+            <a href="javascript:void(0)" class="dot" onclick="currentSlide(2)"></a>
+            <a href="javascript:void(0)" class="dot" onclick="currentSlide(3)"></a>
+            <a href="javascript:void(0)" class="dot" onclick="currentSlide(4)"></a>
         </div>
     </main>
     <footer>
