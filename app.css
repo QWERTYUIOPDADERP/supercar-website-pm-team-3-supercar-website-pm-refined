@@ -142,7 +142,7 @@ nav div a{
 
 body{
   /* margin-top: 5.5vh; */
-  background-color: transparent;
+  background-color: #323443;
 }
 
 #hamburger {
@@ -294,7 +294,20 @@ footer a:focus > img{
   /* transform: scale(1.2); */
 }
 
+.heroImage h1{
+  z-index: 0;
+  color: white;
+  font-size: 5.5rem;
+  position: absolute;
+  top: 20vh;
+  left: 25%;
+  transform: translate(-50%);
+}
+
 main{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   padding: 8vh;
   background-color: #212331;
 }
@@ -324,6 +337,7 @@ main{
 .slideshow-container {
   overflow: hidden;
   max-width: 100%;
+  width: 100%;
   position: relative;
   margin: auto;
 }
@@ -408,6 +422,25 @@ main{
   background-color: #717171;
 }
 
+.twoEvenRow img{
+  width: 50%;
+  object-fit: cover;
+}
+
+.twoEvenRow div{
+  width: 50%;
+}
+
+.twoEvenRow{
+  display: flex;
+  flex-flow: row nowrap;
+  color: white;
+  /* background-color: #323443; */
+  width: 90%;
+  height: 70vh;
+  padding: 5%;
+}
+
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -421,6 +454,19 @@ main{
 
 .column{
   padding: 5%;
+}
+
+.column p{
+  font-size: 2rem;
+}
+
+.button{
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 2.1rem;
+  padding: 2%;
+  background-color: #EAECF0;
 }
 
 .arrow-pulse-down:after {
@@ -462,26 +508,51 @@ main{
   }
 }
 
-.aboutheroText {
-  font-size: 96px;
-  color: red;
-  background-color: white;
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
+.nemesis{
+  background-image: url("images/gallery/7_25-Lux-Black-Nemesis_rr34-1024x576.png");
 }
 
-.aboutheroImage{
-  background-image: url(images/homepage/black-ops1.jpg);
+h2{
+  font-size: 3rem;
+}
+
+/* About Us Page */
+
+.bannerText {
+  font-size: 5.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 30%);
+  position: absolute;
+  padding: 1%;
+  width: fit-content;
+  border-radius: 4px;
+  top: 25%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.bannerImage{
   width: 100%;
-  position: fixed;
+  position: relative;
   z-index: -1;
   object-fit: cover;
   background-size: cover;
-  height: 100vh;
+  height: 40vh;
   background-position-y: -50vh;
   background-position-x: -5vh;
   transform: scale(1.2);
+}
+
+.aboutRich, .aboutRich p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.images {
+  display: flex;
+  flex-flow: column nowrap;
 }

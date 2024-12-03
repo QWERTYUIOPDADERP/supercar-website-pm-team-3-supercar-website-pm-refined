@@ -49,76 +49,27 @@
         </ul>
     </div>
     <div class="heroRow">
-        <div class="heroImage"></div>
+        <div class="heroImage nemesis">
+            <h1>Nemesis RR</h1>
+        </div>
         <div id="arrow" class="arrow-pulse-down"></div>
         <div class="fullScreen"></div>
     </div>
     <main>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <div class="slideContent">
-                    <img class="slideItem" src="images/homepage/Nemesis_Interior_render_test1.jpg">
-                    <div class="slideItem column">
-                        <h2>Nemesis RR</h2>
-                        <p>This is a test</p>
-                        <a href="nemesis.html" class="button"> View Now </a>
-                    </div>
-                </div>
-                <!-- <div class="text">Caption Text</div> -->
+        <div class="twoEvenRow">
+            <img src="images/gallery/Nemesis_Interior_render1-1024x575.jpg">
+            <div class="column">
+                <h3>title</h3>
+                <p>text</p>
             </div>
-        
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <div class="slideContent">
-                    <img class="slideItem" src="images/homepage/KS_config_hanger.jpg">
-                    <div class="slideItem column">
-                        <p>This is not a test</p>
-                        <a href="#"> Not A Button </a>
-                    </div>
-                </div>
-                <!-- <div class="text">Caption Text</div> -->
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <div class="slideContent">
-                    <img class="slideItem" src="images/homepage/black-ops1.jpg">
-                    <div class="slideItem column">
-                        <p>This may be a test</p>
-                        <a href="#"> Button? </a>
-                    </div>
-                </div>
-                <!-- <div class="text">Caption Text</div> -->
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 3</div>
-                <div class="slideContent">
-                    <img class="slideItem" src="images/gallery/7_25-Lux-Black-Nemesis_fr-crop-1024x576.png">
-                    <div class="slideItem column">
-                        <p>Whoa!</p>
-                        <a href="#"> !!! </a>
-                    </div>
-                </div>
-                <!-- <div class="text">Caption Text</div> -->
-            </div>
-        
-            <!-- Next and previous buttons -->
-            <a href="javascript:void(0)" class="prev" id="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a href="javascript:void(0)" class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <br>
-        
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <a href="javascript:void(0)" class="dot" onclick="currentSlide(1)"></a>
-            <a href="javascript:void(0)" class="dot" onclick="currentSlide(2)"></a>
-            <a href="javascript:void(0)" class="dot" onclick="currentSlide(3)"></a>
-            <a href="javascript:void(0)" class="dot" onclick="currentSlide(4)"></a>
+        <div class="twoEvenRow">
+            <div class="column">
+                <h3>title</h3>
+                <p>text</p>
+                <a href="#">link</a>
+            </div>
+            <img src="images/gallery/Nemesis_Interior_render1-1024x575.jpg">
         </div>
     </main>
     <footer>
@@ -167,19 +118,12 @@
         </div>
     </footer>
     <script>
-        showSlides();
         const sidebar = document.querySelector('#sidebar')
         const arrow = document.getElementById('arrow')
         const hamburger = document.querySelector('#hamburger')
         const cart = document.querySelector('#cartButton')
         const account = document.querySelector('#user')
-        document.addEventListener('click', e => {
-        // test.insertAdjacentHTML = e.target    
-            if(!sidebar.contains(e.target) && !hamburger.contains(e.target) && !cart.contains(e.target) && !account.contains(e.target)){
-                closeNav()
-                // document.writeln(e.target)
-            }
-        })
+
         document.addEventListener('scroll', function() {
             if(window.scrollY != 0){
                 arrow.style.visibility = "hidden";
