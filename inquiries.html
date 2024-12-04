@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
     <link rel="icon" type="image/x-icon" href="images/logo/trion-favicon-new.png">
     <script src="script.js"></script>
-    <title>Trion Supercars Official Website</title>
+    <title>Customize Your Nemesis</title>
 </head>
-
 <body>
     <header>
         <nav>
@@ -48,87 +46,20 @@
             <li><a href="about.html">About Us</a></li>
         </ul>
     </div>
-    <div class="heroRow">
-        <div class="heroImage"></div>
-        <div id="arrow" class="arrow-pulse-down"></div>
-        <div class="fullScreen"></div>
-    </div>
     <main>
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <div class="slideContent">
-                    <img class="slideItem" src="images/homepage/Nemesis_Interior_render_test1.jpg">
-                    <div class="slideItem column">
-                        <h2>Nemesis RR</h2>
-                        <p>Hand built in the USA using a large percentage of US-built parts, the
-
-                            Nemesis product line will form the foundation of Trion SuperCars. Built
-                            
-                            around the driver, these models will accommodate larger passengers
-                            
-                            while competing well from a performance and styling perspective
-                        <br>
-                        <br>
-                        With impressive numbers like 0-60 in 2.8 seconds and a top speed of over 270 mph, the Nemesis RR will immediately fit in with the top of this class. Unique “Active aero” panels will allow the Nemesis to handle remarkably at high speeds.
-                        </p>
-                        <a href="nemesis.html" class="button"> View Now </a>
-                    </div>
-                </div>
-                <!-- <div class="text">Caption Text</div> -->
-            </div>
-        
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <div class="slideContent">
-                    <img class="slideItem" src="images/homepage/KS_config_hanger.jpg">
-                    <div class="slideItem column">
-                        <p>This is not a test</p>
-                        <a href="#"> Not A Button </a>
-                    </div>
-                </div>
-                <!-- <div class="text">Caption Text</div> -->
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <div class="slideContent">
-                    <img class="slideItem" src="images/homepage/black-ops1.jpg">
-                    <div class="slideItem column">
-                        <p>This may be a test</p>
-                        <a href="#"> Button? </a>
-                    </div>
-                </div>
-                <!-- <div class="text">Caption Text</div> -->
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 3</div>
-                <div class="slideContent">
-                    <img class="slideItem" src="images/gallery/7_25-Lux-Black-Nemesis_fr-crop-1024x576.png">
-                    <div class="slideItem column">
-                        <p>Whoa!</p>
-                        <a href="#"> !!! </a>
-                    </div>
-                </div>
-                <!-- <div class="text">Caption Text</div> -->
-            </div>
-        
-            <!-- Next and previous buttons -->
-            <a href="javascript:void(0)" class="prev" id="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a href="javascript:void(0)" class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <a href="javascript:void(0)" class="dot" onclick="currentSlide(1)"></a>
-            <a href="javascript:void(0)" class="dot" onclick="currentSlide(2)"></a>
-            <a href="javascript:void(0)" class="dot" onclick="currentSlide(3)"></a>
-            <a href="javascript:void(0)" class="dot" onclick="currentSlide(4)"></a>
+        <div class="form">
+            <h1>Inquiries</h1>
+            <form>
+                <label for="fname">First name:</label><br>
+                <textarea type="text" id="fname" name="fname" placeholder="John"></textarea>
+                <label for="lname">Last name:</label><br>
+                <textarea type="text" id="lname" name="lname" placeholder="Doe"></textarea>
+                <label for="email">Email:</label><br>
+                <textarea type="text" id="email" name="email" placeholder="text@email.com"></textarea>
+                <label for="message">Message:</label><br>
+                <textarea type="text" id="message" name="message" placeholder="Message"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </main>
     <footer>
@@ -177,19 +108,12 @@
         </div>
     </footer>
     <script>
-        showSlides();
         const sidebar = document.querySelector('#sidebar')
         const arrow = document.getElementById('arrow')
         const hamburger = document.querySelector('#hamburger')
         const cart = document.querySelector('#cartButton')
         const account = document.querySelector('#user')
-        document.addEventListener('click', e => {
-        // test.insertAdjacentHTML = e.target    
-            if(!sidebar.contains(e.target) && !hamburger.contains(e.target) && !cart.contains(e.target) && !account.contains(e.target)){
-                closeNav()
-                // document.writeln(e.target)
-            }
-        })
+
         document.addEventListener('scroll', function() {
             if(window.scrollY != 0){
                 arrow.style.visibility = "hidden";
@@ -199,5 +123,4 @@
         });
     </script>
 </body>
-
 </html>

@@ -9,6 +9,7 @@ html{
 }
 
 .sidenav {
+  visibility: "hidden";  
   display: flex;
   flex-wrap: nowrap;
   height: 100%;
@@ -324,7 +325,7 @@ main{
   align-items: center;
   display: flex;
   flex-flow: row;
-  color: black;
+  color: white;
 }
 
 .slideItem{
@@ -425,6 +426,7 @@ main{
 .twoEvenRow img{
   width: 50%;
   object-fit: cover;
+  padding: 3%;
 }
 
 .twoEvenRow div{
@@ -453,11 +455,14 @@ main{
 }
 
 .column{
-  padding: 5%;
+  display: flex;
+  flex-flow: column;
+  padding: 3%;
+  height: 100%;
 }
 
 .column p{
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .button{
@@ -465,8 +470,11 @@ main{
   text-decoration: none;
   border-radius: 5px;
   font-size: 2.1rem;
-  padding: 2%;
+  padding: 1%;
   background-color: #EAECF0;
+  margin-bottom: 3vh;
+  margin-top: auto;
+  width: fit-content;
 }
 
 .arrow-pulse-down:after {
@@ -514,6 +522,7 @@ main{
 
 h2{
   font-size: 3rem;
+  margin-bottom: 1vh;
 }
 
 /* About Us Page */
@@ -559,25 +568,72 @@ h2{
 
 /** Customize car **/
 
+.twoEvenRow .column{
+  padding: 3%;
+  padding-top: 5%;
 
+}
 
+.onePartColumn{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 45vh;
+  width: 80%;
+  color: white;
+}
 
+.onePartColumn a{
+  margin-bottom: 0;
+}
 
+h1{
+  z-index: 0;
+  color: white;
+  font-size: 5.5rem;
+}
 
+label{
+  color: white;
+}
 
+.form{
+  margin-top: 3vh;
+  width: 95%;
+  display: flex;
+  flex-flow: column;
+}
 
+.form form{
+  margin-top: 5vh;
+  width: 90%;
+  align-self: center;
+}
 
+.form label{
+  font-size: 2.1rem;
+}
 
+.form textarea{
+  margin-bottom: 3vh;
+  padding: 1%;
+  width: 100%;
+  height: 10vh;
+  font-size: 1.8rem;
+  resize: none;
+}
 
+.form textarea::placeholder{
+  color: gray;
+  top: 0;
+}
 
-
-
-
-
-
-
-
-
+.form input{
+  margin-top: 2vh;
+  width: fit-content;
+  font-size: 2.1vh;
+  padding: 1%;
+}
 
 
 
