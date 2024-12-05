@@ -635,17 +635,70 @@ label{
   padding: 1%;
 }
 
+.blackwidow{
+  background-image: url(images/instagram/trionsupercarsorange7.jpg);
+}
 
+.imageSection{
+  padding-top: 1%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 80%;
+  padding: 2%;
+  background-color: #323443;
+}
 
+.imageSection div:first-child{
+  display: flex;
+  flex-flow: row;
+  height: 60%;
+}
 
+#largeImage{
+  position: relative;
+  width: 80%;
+  height: 65%;
+  object-fit: cover;
+}
 
+.imageSectionBottom{
+  margin-top: 4vh;
+  width: 100%;
+  height: 20%;
+  align-self: flex-start;
+  justify-content: center;
+  display: flex;
+  flex-flow: row;
+}
 
+.imageSectionBottom img{
+  object-fit: cover;
+  height: 100%;
+  width: 20%;
+  margin: 1%;
+}
 
+#customization{
+  margin: 5%;
+  /* margin-top: 2vh; */
+  width: 40%;
+  background-color: grey;
+}
 
+.horizontal{
+  background-color: #323443;
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-flow: row;
+}
 
-
-
-
+.sideScrollRow a{
+  color: white;
+}
 
 
 

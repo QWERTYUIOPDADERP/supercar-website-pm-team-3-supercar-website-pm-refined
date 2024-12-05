@@ -48,20 +48,7 @@
         </ul>
     </div>
     <main>
-        <div class="form">
-            <h1>Inquiries</h1>
-            <form>
-                <label for="fname">First name:</label><br>
-                <textarea type="text" id="fname" name="fname" placeholder="John"></textarea>
-                <label for="lname">Last name:</label><br>
-                <textarea type="text" id="lname" name="lname" placeholder="Doe"></textarea>
-                <label for="email">Email:</label><br>
-                <textarea type="text" id="email" name="email" placeholder="text@email.com"></textarea>
-                <label for="message">Message:</label><br>
-                <textarea type="text" id="message" name="message" placeholder="Message"></textarea>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+        <h1 id="itemName">test</h1>
     </main>
     <footer>
         <hr>
@@ -110,6 +97,15 @@
         </div>
     </footer>
     <script>
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+        // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+        let value = params.item; // "some_value"
+        
+        setPageInformationItem(value)
+
+
         const sidebar = document.querySelector('#sidebar')
         const arrow = document.getElementById('arrow')
         const hamburger = document.querySelector('#hamburger')

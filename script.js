@@ -58,3 +58,40 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   slides[slideIndex-1].style.transform = "translate(0px,0px)"
 }
+
+function setPageInformation(value){
+  // const title = document.getElementById('customizeCarTitle')
+  const bigImage = document.getElementById('largeImage')
+  const smallImage1 = document.getElementById('smallImage1')
+  const smallImage2 = document.getElementById('smallImage2')
+  const smallImage3 = document.getElementById('smallImage3')
+  const smallImage4 = document.getElementById('smallImage4')
+
+  switch (value) {
+    case "blackwidow":
+      // title.innerText = "Nemesis"
+      bigImage.src="images/instagram/trionblacksupercar4.jpg"
+      smallImage1.src="images/instagram/trionblacksupercar.jpg"
+      smallImage2.src="images/instagram/trionblacksupercar2.jpg"
+      smallImage3.src="images/instagram/trionblacksupercars3.jpg"
+      smallImage4.src="images/instagram/trionsupercarblack6.jpg"
+      break;
+    case "nemesis":
+      // title.innerText = "Black Widow"
+      bigImage.src="images/instagram/trionorangesupercars.jpg"
+      smallImage1.src="images/gallery/nemesis-e-blue-back-1024x537.jpg"
+      smallImage2.src="images/gallery/Nemesis_blk_corrug-1024x633.png"
+      smallImage3.src="images/gallery/front.png"
+      smallImage4.src="images/gallery/Nemesis_Interior_render1-1024x575.jpg"
+      break;
+    default:
+      title.innerText = "error"
+      break;
+  }
+}
+
+function setPageInformationItem(value){
+  // const title = document.getElementById('customizeCarTitle')
+  const title = document.getElementById('itemName')
+  title.innerText=value
+}

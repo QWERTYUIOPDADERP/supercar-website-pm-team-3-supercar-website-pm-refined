@@ -30,6 +30,7 @@
             </li>
             <li><a href="javascript:void(0)">Merchandise >></a>
                 <ul class="dropdown" aria-label="submenu">
+                    <li><a href="merchandise.html">Browse All</a></li>
                     <li><a href="#">Men's</a></li>
                     <li><a href="#">Women's</a></li>
                     <li><a href="#">Other</a></li>
@@ -38,7 +39,7 @@
             <li><a href="javascript:void(0)" id="account">Account >></a>
                 <ul class="dropdown" aria-label="submenu">
                     <li><a href="#">Account Settings</a></li>
-                    <li><a href="#">Concierge</a></li>
+                    <li><a href="inquiries.html">Concierge</a></li>
                     <li><a href="#">Order History</a></li>
                     <li><a href="#">Car Configurations</a></li>
                 </ul>
@@ -47,7 +48,20 @@
         </ul>
     </div>
     <main>
-        
+        <div class="horizontal">
+            <div class="imageSection">
+                <img id="largeImage" src="images/instagram/trionblacksupercar4.jpg">
+                <div class="imageSectionBottom">
+                    <img id="smallImage1" src="images/instagram/trionblacksupercar.jpg">
+                    <img id="smallImage2" src="images/instagram/trionblacksupercar2.jpg">
+                    <img id="smallImage3" src="images/instagram/trionblacksupercars3.jpg">
+                    <img id="smallImage4" src="images/instagram/trionsupercarblack6.jpg">
+                </div>
+            </div>
+            <div id="customization">
+                <p>test</p>
+            </div>
+        </div>
     </main>
     <footer>
         <hr>
@@ -60,6 +74,7 @@
                 </li>
                 <li><p>Merchandise</p>
                     <ul>
+                        <li><a href="merchandise.html">Browse All</a></li>
                         <li><a href="#">Men's</a></li>
                         <li><a href="#">Women's</a></li>
                         <li><a href="#">Other</a></li>
@@ -68,7 +83,7 @@
                 <li><p>Help</p>
                     <ul>
                         <li><a href="#">Account Settings</a></li>
-                        <li><a href="#">Concierge</a></li>
+                        <li><a href="inquiries.html">Concierge</a></li>
                         <li><a href="#">Order History</a></li>
                         <li><a href="#">Car Configurations</a></li>
                     </ul>
@@ -95,6 +110,15 @@
         </div>
     </footer>
     <script>
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+        // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+        let value = params.car; // "some_value"
+        
+        setPageInformation(value)
+
+
         const sidebar = document.querySelector('#sidebar')
         const arrow = document.getElementById('arrow')
         const hamburger = document.querySelector('#hamburger')
