@@ -700,7 +700,16 @@ label{
   color: white;
 }
 
-
+#cartNumber{
+  color: black;
+  position: absolute;
+  font-size: 1.5rem;
+  bottom: -8px;
+  right: -5px;
+  background-color: white;
+  border-radius: 25%;
+  padding: 2px;
+}
 
 
 

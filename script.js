@@ -1,3 +1,4 @@
+
 function openNav() {
   document.getElementById("sidebar").style.width = "25%";
   // document.getElementById("body").style.marginLeft = "25%";
@@ -94,4 +95,56 @@ function setPageInformationItem(value){
   // const title = document.getElementById('customizeCarTitle')
   const title = document.getElementById('itemName')
   title.innerText=value
+}
+
+function checkout(value){
+
+  let items = []
+  if (localStorage.getItem("items") === null) {
+
+  } else {
+    items = JSON.parse(localStorage.getItem("items"))
+  }
+  const newitem = document.getElementById('itemtest')
+
+  items.push(value)
+  localStorage.setItem("items",JSON.stringify(items))
+  newitem.innerText=JSON.parse(localStorage.getItem("items"))
+  updateCart()
+}
+
+function updateCart(){
+  const cartNum = document.getElementById('cartNumber')
+  if(localStorage.getItem("items") === null || cartNum.innerText==="0"){
+    cartNum.innerText=""
+    cartNum.style.backgroundColor="transparent"
+  } else{
+    cartNum.innerText=JSON.parse(localStorage.getItem("items")).length
+    cartNum.style.backgroundColor="white"
+  }
+  // cartNum.innerText="test"
+}
+
+function cartItems(){
+  const items = document.getElementById('cartItems')
+  if(localStorage.getItem("items") === null || cartNum.innerText==="0"){
+    items.innerText="No items"
+  } else{
+    items.innerText=JSON.parse(localStorage.getItem("items"))
+  }
+}
+
+function removeItem(){
+  let items = []
+  if (localStorage.getItem("items") === null) {
+
+  } else {
+    items = JSON.parse(localStorage.getItem("items"))
+    items.pop(value)
+    updateCart()
+  }
+}
+
+function onStart(){
+  updateCart()
 }

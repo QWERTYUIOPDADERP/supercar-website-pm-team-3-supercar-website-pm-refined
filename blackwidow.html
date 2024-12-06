@@ -16,7 +16,9 @@
             <a id="hamburger" href="javascript:void(0)" onclick="openNavWithFocus('close')"><img src="icons/menu.png" alt="hamburger menu icon"></a>
             <a id="trionName" href="index.html">Trion</a>
             <div>
-                <a id="cartButton" href="#"><img src="icons/cart.png" alt="Cart"></a>
+                <a id="cartButton" href="cart.html"><img src="icons/cart.png" alt="Cart">
+                    <p id="cartNumber"></p>
+                </a>
                 <a id="user" href="javascript:void(0)"><img src="icons/account.png" onclick="openNavWithFocus('account')" alt="Profile"></a>
             </div>
         </nav>
@@ -132,6 +134,7 @@
         </div>
     </footer>
     <script>
+        onStart()
         const sidebar = document.querySelector('#sidebar')
         const arrow = document.getElementById('arrow')
         const hamburger = document.querySelector('#hamburger')
