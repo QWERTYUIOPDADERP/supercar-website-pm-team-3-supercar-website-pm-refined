@@ -124,7 +124,11 @@ function updateCart(){
     cartNum.innerText=""
     cartNum.style.backgroundColor="transparent"
   } else{
-    cartNum.innerText=JSON.parse(localStorage.getItem("items")).length
+    if(JSON.parse(localStorage.getItem("items")).length<9){
+      cartNum.innerText=JSON.parse(localStorage.getItem("items")).length
+    } else {
+      cartNum.innerText="9+"
+    }
     cartNum.style.backgroundColor="white"
   }
   if(JSON.stringify(window.location.href).includes("cart.html")){
