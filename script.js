@@ -27,9 +27,6 @@ function closeNav() {
   // }, 500);
 }
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -39,6 +36,8 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
+let slideIndex = 1
 
 function showSlides(n) {
   let i;
@@ -94,10 +93,14 @@ function setPageInformation(value){
 function setPageInformationItem(value){
   // const title = document.getElementById('customizeCarTitle')
   const title = document.getElementById('itemName')
-  title.innerText=value
+  const image = document.getElementById('merchandiseItemImage')
+  if(value!= null){
+    title.innerText=value
+    image.src="images/merchandise/"+value+".jpg"
+  }
 }
 
-function checkout(value){
+function addToCart(value){
 
   let items = []
   if (localStorage.getItem("items") === null) {
@@ -105,46 +108,117 @@ function checkout(value){
   } else {
     items = JSON.parse(localStorage.getItem("items"))
   }
-  const newitem = document.getElementById('itemtest')
 
   items.push(value)
   localStorage.setItem("items",JSON.stringify(items))
-  newitem.innerText=JSON.parse(localStorage.getItem("items"))
+
   updateCart()
+  
+    
+  window.alert("Successfully added to cart!")
 }
 
 function updateCart(){
   const cartNum = document.getElementById('cartNumber')
-  if(localStorage.getItem("items") === null || cartNum.innerText==="0"){
+  if(localStorage.getItem("items") === null || localStorage.getItem("items") === "[]" || cartNum.innerText==="0"){
     cartNum.innerText=""
     cartNum.style.backgroundColor="transparent"
   } else{
     cartNum.innerText=JSON.parse(localStorage.getItem("items")).length
     cartNum.style.backgroundColor="white"
   }
+  if(JSON.stringify(window.location.href).includes("cart.html")){
+    createButton()
+    cartItems()
+  }
   // cartNum.innerText="test"
 }
 
 function cartItems(){
   const items = document.getElementById('cartItems')
-  if(localStorage.getItem("items") === null || cartNum.innerText==="0"){
+  if(localStorage.getItem("items") === null || localStorage.getItem("items") === "[]"){
     items.innerText="No items"
   } else{
     items.innerText=JSON.parse(localStorage.getItem("items"))
   }
 }
 
-function removeItem(){
+function removeItem(obj){
   let items = []
+  let str = obj.slice(-1);
   if (localStorage.getItem("items") === null) {
-
   } else {
     items = JSON.parse(localStorage.getItem("items"))
-    items.pop(value)
-    updateCart()
+    removeArrayItem(items,items[str])
+    // removeItem(items,items[str])
+    localStorage.setItem("items",JSON.stringify(items))
+  }
+  updateCart()
+}
+
+function onCartStart(){
+  updateCart()
+}
+
+function createButton(){
+  let sections = document.querySelectorAll("div.cartItem")
+  for(var i = 0; i < sections.length; i++){
+    sections[i].remove()
+  }
+  let ammount = JSON.parse(localStorage.getItem("items")).length
+  for (var i = 0; i < ammount; i++) {
+    main=document.getElementById("main")
+    var section = document.createElement("div")
+    var txt = document.createElement("a");
+    var btn = document.createElement("button")
+    var column = document.createElement("div")
+    var img = document.createElement("img")
+
+    btn.id = "removeCartItem"+i
+    btn.className = "removeCartItem button"
+    section.id = "cartItem"+i
+    section.className = "cartItem twoEvenRow"
+    txt.id = "itemText"+i
+    txt.className = "itemText"
+    column.id = "itemColumn"+i
+    column.className = "itemColumn column"
+    img.id = "itemImage"+i
+    img.className = "itemImage"
+
+    txt.href="merchandiseItem.html?item="+JSON.parse(localStorage.getItem("items"))[i]
+    img.src="images/merchandise/"+JSON.parse(localStorage.getItem('items'))[i]+".jpg"
+
+    const words = JSON.parse(localStorage.getItem("items"))[i].split("-");
+    console.log(words)
+
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    }
+
+    const buttonText = document.createTextNode("Remove item")
+    const text = document.createTextNode("Item "+(i+1)+": "+words.join(' '))
+
+    btn.appendChild(buttonText)
+    txt.appendChild(text)
+    column.appendChild(txt)
+    column.appendChild(img)
+
+    section.appendChild(column)
+    section.appendChild(btn)
+
+    main.appendChild(section)
+    btn.onclick = function() { removeItem(this.id) }
   }
 }
 
 function onStart(){
   updateCart()
+}
+
+function removeArrayItem(array, itemToRemove) {
+  const index = array.indexOf(itemToRemove);
+
+  if (index !== -1) {
+      array.splice(index, 1);
+  }
 }
