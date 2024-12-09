@@ -8,6 +8,10 @@ html{
   color: transparent;
 }
 
+p, h1, h2, h3{
+  color: white;
+}
+
 .sidenav {
   visibility: "hidden";  
   display: flex;
@@ -84,6 +88,10 @@ li:focus-within a {
 
 .sidenav ul li ul li {
   clear: both;
+  width: 100%;
+}
+
+.sidenav ul{
   width: 100%;
 }
 

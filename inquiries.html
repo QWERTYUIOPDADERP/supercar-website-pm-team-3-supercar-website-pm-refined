@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="app.css">
     <link rel="icon" type="image/x-icon" href="images/logo/trion-favicon-new.png">
     <script src="script.js"></script>
-    <title>Customize Your Nemesis</title>
+    <title>Inquiries | Trion</title>
 </head>
 <body>
     <header>
@@ -40,10 +40,11 @@
             </li>
             <li><a href="javascript:void(0)" id="account">Account >></a>
                 <ul class="dropdown" aria-label="submenu">
-                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="account.html">Account Settings</a></li>
                     <li><a href="inquiries.html">Concierge</a></li>
                     <li><a href="#">Order History</a></li>
                     <li><a href="#">Car Configurations</a></li>
+                    <li><a onclick="signout()" href="javascript:void(0)">Sign out</a></li>
                 </ul>
             </li>
             <li><a href="about.html">About Us</a></li>
@@ -82,17 +83,13 @@
                         <li><a href="#">Other</a></li>
                     </ul>
                 </li>
-                <li><p>Help</p>
+                <li><p>Account</p>
                     <ul>
-                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="account.html">Account Settings</a></li>
                         <li><a href="inquiries.html">Concierge</a></li>
                         <li><a href="#">Order History</a></li>
                         <li><a href="#">Car Configurations</a></li>
-                    </ul>
-                </li>
-                <li><p>Profile</p>
-                    <ul>
-                        <li><a href="#">Profile</a></li>
+                    <li><a onclick="signout()" href="javascript:void(0)">Sign out</a></li>
                     </ul>
                 </li>
                 <li><p>About Us</p>

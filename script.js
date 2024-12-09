@@ -143,7 +143,7 @@ function cartItems(){
   if(localStorage.getItem("items") === null || localStorage.getItem("items") === "[]"){
     items.innerText="No items"
   } else{
-    items.innerText=JSON.parse(localStorage.getItem("items"))
+    items.innerText="Items:"
   }
 }
 
@@ -225,4 +225,34 @@ function removeArrayItem(array, itemToRemove) {
   if (index !== -1) {
       array.splice(index, 1);
   }
+}
+
+function popup(text){
+  window.alert(text)
+}
+
+function login(username){
+  localStorage.setItem("username",username)
+  setUsername()
+}
+
+function changeUsername(){
+
+}
+
+function setUsername(){
+  let params = new Proxy(new URLSearchParams(window.location.search), { get: (searchParams, prop) => searchParams.get(prop),})
+  if(params.name != null){
+    localStorage.setItem("name",params.name)
+    document.getElementById("username").innerText=localStorage.getItem("name")
+  } else if(localStorage.getItem("name")!=null){
+    document.getElementById("username").innerText=localStorage.getItem("name")
+  } else {
+    document.getElementById("username").innerText="Not logged in"
+  }
+  console.log('test')
+}
+
+function signout(){
+  localStorage.removeItem("name")
 }
