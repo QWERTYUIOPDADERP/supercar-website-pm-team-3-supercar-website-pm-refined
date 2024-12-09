@@ -545,7 +545,6 @@ h2{
   height: 40vh;
   background-position-y: -50vh;
   background-position-x: -5vh;
-  transform: scale(1.2);
 }
 
 .aboutRich{
@@ -568,26 +567,53 @@ h2{
 #aboutRich p{
   align-self: center;
   font-size: 1.25rem;
+  margin-left: 2rem;
 }
 
 .aboutRich img {
   height: 89vh;
   width: 42vw;
+  object-fit: cover;
 }
 
-.images {
+.aboutimages{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.aboutimages img{
+  margin: 2em 1em 0 .75em;
+  height: 44vh;
+  width: 44vh;
+  object-fit: cover;
+}
+
+.firstrowimages {
   display: flex;
   flex-flow: row wrap;
 }
 
-.images img {
-  margin-top: 2em;
-  height: 44vh;
+.secondrowimages {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.secondrowimages{ 
-  
+.secondrowimages img{ 
+  margin-top: 10em;
 }
+
+.aboutext{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* End About Us Page */
+
+
+
 
 /** Customize car **/
 
