@@ -33,9 +33,9 @@
             <li><a href="javascript:void(0)">Merchandise >></a>
                 <ul class="dropdown" aria-label="submenu">
                     <li><a href="merchandise.html">Browse All</a></li>
-                    <li><a href="#">Men's</a></li>
-                    <li><a href="#">Women's</a></li>
-                    <li><a href="#">Other</a></li>
+                    <li><a href="merchandiseMen.html">Men's</a></li>
+                    <li><a href="merchandiseWomen.html">Women's</a></li>
+                    <li><a href="merchandiseOther.html">Other</a></li>
                 </ul>
             </li>
             <li><a href="javascript:void(0)" id="account">Account >></a>
@@ -43,7 +43,7 @@
                     <li><a href="account.html">Account Settings</a></li>
                     <li><a href="inquiries.html">Concierge</a></li>
                     <li><a href="#">Order History</a></li>
-                    <li><a href="#">Car Configurations</a></li>
+                    <li><a href="configurations.html">Car Configurations</a></li>
                     <li><a onclick="signout()" href="javascript:void(0)">Sign out</a></li>
                 </ul>
             </li>
@@ -52,7 +52,13 @@
     </div>
     <main>
         <h1 id="itemName">test</h1>
-        <img id="merchandiseItemImage" src="">
+        <div class="horizontalFlex">
+            <img id="merchandiseItemImage" src="">
+            <div class="itemColumn">
+                <p id="itemDescription">this is a description</p>
+                <h2 class="cost">$10.00</h2>
+            </div>
+        </div>
         <div class="horizontalFlex">
             <a id="back" href="merchandise.html">Back</a>
             <button type="button" id="addToCart">Add To Cart</button>
@@ -70,9 +76,9 @@
                 <li><p>Merchandise</p>
                     <ul>
                         <li><a href="merchandise.html">Browse All</a></li>
-                        <li><a href="#">Men's</a></li>
-                        <li><a href="#">Women's</a></li>
-                        <li><a href="#">Other</a></li>
+                        <li><a href="merchandiseMen.html">Men's</a></li>
+                        <li><a href="merchandiseWomen.html">Women's</a></li>
+                        <li><a href="merchandiseOther.html">Other</a></li>
                     </ul>
                 </li>
                 <li><p>Account</p>
@@ -80,7 +86,7 @@
                         <li><a href="account.html">Account Settings</a></li>
                         <li><a href="inquiries.html">Concierge</a></li>
                         <li><a href="#">Order History</a></li>
-                        <li><a href="#">Car Configurations</a></li>
+                        <li><a href="configurations.html">Car Configurations</a></li>
                     <li><a onclick="signout()" href="javascript:void(0)">Sign out</a></li>
                     </ul>
                 </li>

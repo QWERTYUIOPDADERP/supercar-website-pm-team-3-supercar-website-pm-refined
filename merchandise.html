@@ -33,9 +33,9 @@
             <li><a href="javascript:void(0)">Merchandise >></a>
                 <ul class="dropdown" aria-label="submenu">
                     <li><a href="merchandise.html">Browse All</a></li>
-                    <li><a href="#">Men's</a></li>
-                    <li><a href="#">Women's</a></li>
-                    <li><a href="#">Other</a></li>
+                    <li><a href="merchandiseMen.html">Men's</a></li>
+                    <li><a href="merchandiseWomen.html">Women's</a></li>
+                    <li><a href="merchandiseOther.html">Other</a></li>
                 </ul>
             </li>
             <li><a href="javascript:void(0)" id="account">Account >></a>
@@ -43,7 +43,7 @@
                     <li><a href="account.html">Account Settings</a></li>
                     <li><a href="inquiries.html">Concierge</a></li>
                     <li><a href="#">Order History</a></li>
-                    <li><a href="#">Car Configurations</a></li>
+                    <li><a href="configurations.html">Car Configurations</a></li>
                     <li><a onclick="signout()" href="javascript:void(0)">Sign out</a></li>
                 </ul>
             </li>
@@ -51,13 +51,41 @@
         </ul>
     </div>
     <main>
-        <section class="sideScrollRow">
-            <div class="column">
+        <section class="flexRow">
+            <div class="merchItem">
                 <a href="merchandiseItem.html?item=polo-yellow-collar">Polo Yellow Collar</a>
+                <img src="images/merchandise/polo-yellow-collar.jpg">
+                <br>
+                <h3>$10.00</h3>
+                <a class="button" href="merchandiseItem.html?item=polo-yellow-collar">See more</a>
+            </div>
+            <div class="merchItem">
                 <a href="merchandiseItem.html?item=polo-green-collar">Polo Green Collar</a>
+                <img src="images/merchandise/polo-green-collar.jpg">
+                <br>
+                <h3>$10.00</h3>
+                <a class="button" href="merchandiseItem.html?item=polo-green-collar">See more</a>
+            </div>
+            <div class="merchItem">
                 <a href="merchandiseItem.html?item=baseball-cap">Baseball Cap</a>
+                <img src="images/merchandise/baseball-cap.jpg">
+                <br>
+                <h3>$10.00</h3>
+                <a class="button" href="merchandiseItem.html?item=baseball-cap">See more</a>
+            </div>
+            <div class="merchItem">
                 <a href="merchandiseItem.html?item=straw-beach-hat">Straw Beach Hat</a>
+                <img src="images/merchandise/straw-beach-hat.jpg">
+                <br>
+                <h3>$10.00</h3>
+                <a class="button" href="merchandiseItem.html?item=straw-beach-hat">See more</a>
+            </div>
+            <div class="merchItem">
                 <a href="merchandiseItem.html?item=suit">Suit</a>
+                <img src="images/merchandise/suit.jpg">
+                <br>
+                <h3>$10.00</h3>
+                <a class="button" href="merchandiseItem.html?item=suit">See more</a>
             </div>
         </section>
     </main>
@@ -73,9 +101,9 @@
                 <li><p>Merchandise</p>
                     <ul>
                         <li><a href="merchandise.html">Browse All</a></li>
-                        <li><a href="#">Men's</a></li>
-                        <li><a href="#">Women's</a></li>
-                        <li><a href="#">Other</a></li>
+                        <li><a href="merchandiseMen.html">Men's</a></li>
+                        <li><a href="merchandiseWomen.html">Women's</a></li>
+                        <li><a href="merchandiseOther.html">Other</a></li>
                     </ul>
                 </li>
                 <li><p>Account</p>
@@ -83,7 +111,7 @@
                         
                         <li><a href="inquiries.html">Concierge</a></li>
                         <li><a href="#">Order History</a></li>
-                        <li><a href="#">Car Configurations</a></li>
+                        <li><a href="configurations.html">Car Configurations</a></li>
                     <li><a onclick="signout()" href="javascript:void(0)">Sign out</a></li>
                     </ul>
                 </li>
@@ -109,14 +137,6 @@
         const hamburger = document.querySelector('#hamburger')
         const cart = document.querySelector('#cartButton')
         const account = document.querySelector('#user')
-
-        document.addEventListener('scroll', function() {
-            if(window.scrollY != 0){
-                arrow.style.visibility = "hidden";
-            } else {
-                arrow.style.visibility = "visible";
-            }
-        });
     </script>
 </body>
 </html>
