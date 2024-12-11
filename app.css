@@ -580,27 +580,19 @@ h2{
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .aboutimages img{
-  margin: 2em 1em 0 .75em;
+  margin: 2em 0 0 .75em;
   height: 44vh;
   width: 44vh;
   object-fit: cover;
 }
 
-.firstrowimages {
+.aboutrowimages {
   display: flex;
   flex-flow: row wrap;
-}
-
-.secondrowimages {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.secondrowimages img{ 
-  margin-top: 10em;
 }
 
 .aboutext{
@@ -817,56 +809,117 @@ label{
 }
 
 .searchblock {
-display: flex;
-align-self: center;
-color: lightgrey;
-background-color: #2F2F34;
-width: 80%;
-margin-bottom: 5vh;
-padding: .25vh;
+  display: flex;
+  align-self: center;
+  color: lightgrey;
+  background-color: #2F2F34;
+  width: 80%;
+  margin-bottom: 5vh;
+  padding: .25vh;
 }
 
 .searchblock p{
   color: grey;
   margin-left: .5rem;
-}
+}  
 
 .colorblock {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+}  
+
+.color {
+  padding: 2vh;
 }
 
 .name{
-color: black;
-}
+  color: black;
+}  
 
+.red {
+  background-color: red;
+  height: 3vh;
+  width: 30%;
+}  
 
+.yellow {
+  background-color: yellow;
+  height: 3vh;
+  width: 30%;
+}  
 
+.blue {
+  background-color: blue;
+  height: 3vh;
+  width: 30%;
+}  
 
+.violet {
+  background-color: violet;
+  height: 3vh;
+  width: 30%;
+}  
 
+.teal {
+  background-color: teal;
+  height: 3vh;
+  width: 30%;
+}  
 
+.black {
+  background-color: black;
+  height: 3vh;
+  width: 30%;
+}  
 
+.silver {
+  background-color: silver;
+  height: 3vh;
+  width: 30%;
+}    
 
+.orange {
+  background-color: orange;
+  height: 3vh;
+  width: 30%;
+}  
 
+.green {
+  background-color: green;
+  height: 3vh;
+  width: 30%;
+}  
 
+.indigo {
+  background-color: indigo;
+  height: 3vh;
+  width: 30%;
+}  
 
+.pink {
+  background-color: pink;
+  height: 3vh;
+  width: 30%;
+}  
 
+.navy-blue {
+  background-color: navy;
+  height: 3vh;
+  width: 30%;
+}  
 
+.white {
+  background-color: white;
+  height: 3vh;
+  width: 30%;
+}  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bronze {
+  background-color: #CE8946;
+  height: 3vh;
+  width: 30%;
+}  
 
 
 
