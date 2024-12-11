@@ -13,7 +13,7 @@ p, h1, h2, h3{
 }
 
 .sidenav {
-  visibility: "hidden";  
+  visibility: hidden;  
   display: flex;
   flex-wrap: nowrap;
   height: 100%;
@@ -486,6 +486,10 @@ main{
   width: fit-content;
 }
 
+.button:hover, .button:focus{
+  background-color: white;
+}
+
 .arrow-pulse-down:after {
   content: "🡣"; /* Here you can change the style of the arrow */
   color: white;
@@ -814,14 +818,24 @@ label{
   width: 40%;
 }
 
+#checkOut{
+  visibility: hidden;
+}
 
+.lightgrey div:last-of-type{
+  align-items: flex-end;
+}
 
+.lightgrey .column{
+  padding: 1%;
+}
 
-
-
-
-
-
+.lightgrey{
+  margin-top: 3vh;
+  height: auto;
+  padding: 1%;
+  background-color: #323443;
+}
 
 
 

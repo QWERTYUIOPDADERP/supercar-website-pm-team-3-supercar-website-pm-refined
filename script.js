@@ -166,10 +166,13 @@ function updateCart(){
 
 function cartItems(){
   const items = document.getElementById('cartItems')
+  const checkout = document.getElementById('checkOut')
   if(localStorage.getItem("items") === null || localStorage.getItem("items") === "[]"){
     items.innerText="No items"
+    checkout.style.visibility = "hidden"
   } else{
     items.innerText="Items:"
+    checkout.style.visibility = "visible"
   }
 }
 
@@ -197,7 +200,7 @@ function createButton(){
   }
   let ammount = JSON.parse(localStorage.getItem("items")).length
   for (var i = 0; i < ammount; i++) {
-    main=document.getElementById("main")
+    var checkout = document.getElementById('checkOut')
     var section = document.createElement("div")
     var txt = document.createElement("a");
     var btn = document.createElement("button")
@@ -235,7 +238,7 @@ function createButton(){
     section.appendChild(column)
     section.appendChild(btn)
 
-    main.appendChild(section)
+    checkout.before(section)
     btn.onclick = function() { removeItem(this.id) }
   }
 }
@@ -259,10 +262,6 @@ function popup(text){
 function login(username){
   localStorage.setItem("username",username)
   setUsername()
-}
-
-function changeUsername(){
-
 }
 
 function setUsername(){
