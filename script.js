@@ -157,7 +157,7 @@ function updateCart(){
     }
     cartNum.style.backgroundColor="white"
   }
-  if(JSON.stringify(window.location.href).includes("cart.html")){
+  if(JSON.stringify(window.location.href).includes("cart")){
     createButton()
     cartItems()
   }

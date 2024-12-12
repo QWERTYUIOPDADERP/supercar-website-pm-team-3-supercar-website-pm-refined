@@ -443,6 +443,7 @@ main{
 
 .twoEvenRow div{
   width: 50%;
+  padding-top: 0;
 }
 
 .twoEvenRow{
@@ -1022,6 +1023,7 @@ label{
 }
 
 .horizontalFlex img{
+  height: 60vh;
   width: 40%;
   object-fit: cover;
 }
