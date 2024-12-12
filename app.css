@@ -12,7 +12,12 @@ html{
   color: transparent;
 }
 
+p, h1, h2, h3{
+  color: white;
+}
+
 .sidenav {
+  visibility: hidden;  
   display: flex;
   flex-wrap: nowrap;
   height: 100%;
@@ -87,6 +92,10 @@ li:focus-within a {
 
 .sidenav ul li ul li {
   clear: both;
+  width: 100%;
+}
+
+.sidenav ul{
   width: 100%;
 }
 
@@ -328,7 +337,7 @@ main{
   align-items: center;
   display: flex;
   flex-flow: row;
-  color: black;
+  color: white;
 }
 
 .slideItem{
@@ -429,6 +438,7 @@ main{
 .twoEvenRow img{
   width: 50%;
   object-fit: cover;
+  padding: 3%;
 }
 
 .twoEvenRow div{
@@ -443,6 +453,7 @@ main{
   width: 90%;
   height: 70vh;
   padding: 5%;
+  min-width: 1000px;
 }
 
 /* Fading animation */
@@ -457,11 +468,14 @@ main{
 }
 
 .column{
-  padding: 5%;
+  display: flex;
+  flex-flow: column;
+  padding: 3%;
+  height: 100%;
 }
 
 .column p{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .button{
@@ -469,8 +483,15 @@ main{
   text-decoration: none;
   border-radius: 5px;
   font-size: 2.1rem;
-  padding: 2%;
+  padding: 1%;
   background-color: #EAECF0;
+  margin-bottom: 3vh;
+  margin-top: auto;
+  width: fit-content;
+}
+
+.button:hover, .button:focus{
+  background-color: white;
 }
 
 .arrow-pulse-down:after {
@@ -518,6 +539,7 @@ main{
 
 h2{
   font-size: 3rem;
+  margin-bottom: 1vh;
 }
 
 /* About Us Page */
@@ -608,6 +630,27 @@ h2{
 
 
 /** Customize car **/
+.twoEvenRow .column{
+  padding: 3%;
+  padding-top: 5%;
+
+}
+
+.onePartColumn{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 45vh;
+  width: 80%;
+  color: white;
+}
+
+.onePartColumn a{
+  margin-top: 10px;
+}
+
+/** Customize car **/
+
 .twoEvenRow .column{
   padding: 3%;
   padding-top: 5%;
@@ -722,14 +765,10 @@ label{
 }
 
 #customization{
-  display: flex;
-  flex-direction: column;
   margin: 5%;
   /* margin-top: 2vh; */
-  height: 70vh;
-  width: 30%;
+  width: 40%;
   background-color: grey;
-  padding: 2vh ;
 }
 
 .horizontal{
@@ -759,6 +798,50 @@ label{
   color: white;
   margin-top: 1rem;
   font-size: 2rem;
+}
+
+.flexRow{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+
+.merchItem{
+  padding: 1%;
+  margin: 1%;
+  background-color: #323443;
+  display: flex;
+  flex-flow: column;
+  width: 23%;
+  align-items: flex-start;
+}
+
+.merchItem .button{
+  align-self: flex-end;
+  margin-bottom: 0;
+  background-color: black;
+}
+
+.merchItem h3{
+  font-size: 1.8rem;
+}
+
+.merchItem img{
+  object-fit: cover;
+  width: 95%;
+  height: 20vh;
+}
+
+.flexRow a{
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.flexRow a:hover, .flexRow a:focus{
+  text-decoration: underline;
 }
 
 #cartNumber{
@@ -797,7 +880,8 @@ label{
   display: flex;
   flex-flow: row;
   justify-content: space-around;
-  width: 50%;
+  width: 80%;
+  margin: 1%;
 }
 
 .horizontalFlex a{
@@ -917,6 +1001,45 @@ label{
 
 
 
+.horizontalFlex p{
+  font-size: 1.5rem;
+}
+
+.cost{
+  align-self: center;
+  margin-top: auto;
+}
+
+.horizontalFlex img{
+  width: 40%;
+  object-fit: cover;
+}
+
+.itemColumn{
+  padding: 2vh 0;
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+}
+
+#checkOut{
+  visibility: hidden;
+}
+
+.lightgrey div:last-of-type{
+  align-items: flex-end;
+}
+
+.lightgrey .column{
+  padding: 1%;
+}
+
+.lightgrey{
+  margin-top: 3vh;
+  height: auto;
+  padding: 1%;
+  background-color: #323443;
+}
 
 
 

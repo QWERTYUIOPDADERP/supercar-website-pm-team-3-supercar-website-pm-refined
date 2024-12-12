@@ -33,17 +33,17 @@
             <li><a href="javascript:void(0)">Merchandise >></a>
                 <ul class="dropdown" aria-label="submenu">
                     <li><a href="merchandise.html">Browse All</a></li>
-                    <li><a href="#">Men's</a></li>
-                    <li><a href="#">Women's</a></li>
-                    <li><a href="#">Other</a></li>
+                    <li><a href="merchandiseMen.html">Men's</a></li>
+                    <li><a href="merchandiseWomen.html">Women's</a></li>
+                    <li><a href="merchandiseOther.html">Other</a></li>
                 </ul>
             </li>
             <li><a href="javascript:void(0)" id="account">Account >></a>
                 <ul class="dropdown" aria-label="submenu">
                     <li><a href="account.html">Account Settings</a></li>
                     <li><a href="inquiries.html">Concierge</a></li>
-                    <li><a href="#">Order History</a></li>
-                    <li><a href="#">Car Configurations</a></li>
+                    <li><a href="orderhistory.html">Order History</a></li>
+                    <li><a href="configurations.html">Car Configurations</a></li>
                     <li><a onclick="signout()" href="javascript:void(0)">Sign out</a></li>
                 </ul>
             </li>
@@ -140,17 +140,17 @@
                 <li><p>Merchandise</p>
                     <ul>
                         <li><a href="merchandise.html">Browse All</a></li>
-                        <li><a href="#">Men's</a></li>
-                        <li><a href="#">Women's</a></li>
-                        <li><a href="#">Other</a></li>
+                        <li><a href="merchandiseMen.html">Men's</a></li>
+                        <li><a href="merchandiseWomen.html">Women's</a></li>
+                        <li><a href="merchandiseOther.html">Other</a></li>
                     </ul>
                 </li>
                 <li><p>Account</p>
                     <ul>
                         <li><a href="account.html">Account Settings</a></li>
                         <li><a href="inquiries.html">Concierge</a></li>
-                        <li><a href="#">Order History</a></li>
-                        <li><a href="#">Car Configurations</a></li>
+                        <li><a href="orderhistory.html">Order History</a></li>
+                        <li><a href="configurations.html">Car Configurations</a></li>
                     <li><a onclick="signout()" href="javascript:void(0)">Sign out</a></li>
                     </ul>
                 </li>
@@ -186,14 +186,6 @@
         const hamburger = document.querySelector('#hamburger')
         const cart = document.querySelector('#cartButton')
         const account = document.querySelector('#user')
-
-        document.addEventListener('scroll', function() {
-            if(window.scrollY != 0){
-                arrow.style.visibility = "hidden";
-            } else {
-                arrow.style.visibility = "visible";
-            }
-        });
     </script>
 </body>
 </html>
