@@ -933,6 +933,7 @@ label{
 .Color button{
   height: 5vh;
   width: 18vh;
+  cursor: pointer;
 }
 
 .name{
