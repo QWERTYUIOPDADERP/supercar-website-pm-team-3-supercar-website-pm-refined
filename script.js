@@ -71,18 +71,28 @@ function setPageInformation(value){
     case "blackwidow":
       // title.innerText = "Nemesis"
       bigImage.src="images/instagram/trionblacksupercar4.jpg"
+      bigImage.alt="A black car hidden in shadow facing the camera head on"
       smallImage1.src="images/instagram/trionblacksupercar.jpg"
+      smallImage1.alt="A black car viewed at an angle on a white background"
       smallImage2.src="images/instagram/trionblacksupercar2.jpg"
+      smallImage2.src="A low riding black car sitting in front of a city"
       smallImage3.src="images/instagram/trionblacksupercars3.jpg"
+      smallImage3.alt="A close up of the back and spoiler of a black car"
       smallImage4.src="images/instagram/trionsupercarblack6.jpg"
+      smallImage4.alt="The side view of a black car with tinted windows in a parking garage"
       break;
     case "nemesis":
       // title.innerText = "Black Widow"
       bigImage.src="images/instagram/trionorangesupercars.jpg"
+      bigImage.alt="An orange car with a black racing strip facing towards the camera"
       smallImage1.src="images/gallery/nemesis-e-blue-back-1024x537.jpg"
+      smallImage1.alt="A blue racing car viewed from behind"
       smallImage2.src="images/gallery/Nemesis_blk_corrug-1024x633.png"
+      smallImage2.alt="A black racing car with a spoiler facing away from the camera towards the right"
       smallImage3.src="images/gallery/front.png"
+      smallImage3.alt="A white car with a black racing strip in the middle facing the camera"
       smallImage4.src="images/gallery/Nemesis_Interior_render1-1024x575.jpg"
+      smallImage4.alt="An orange car viewed from the sideview with scissor doors"
       break;
     default:
       title.innerText = "error"
@@ -274,7 +284,6 @@ function setUsername(){
   } else {
     document.getElementById("username").innerText="Not logged in"
   }
-  console.log('test')
 }
 
 function signout(){
