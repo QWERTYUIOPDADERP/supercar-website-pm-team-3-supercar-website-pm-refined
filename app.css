@@ -765,9 +765,12 @@ label{
 }
 
 #customization{
+  display: flex;
+  flex-flow: column wrap;
   margin: 5%;
   /* margin-top: 2vh; */
-  width: 40%;
+  width: 30%;
+  height: 70vh;
   background-color: grey;
 }
 
@@ -896,17 +899,11 @@ label{
 .searchblock {
   display: flex;
   align-self: center;
-  color: lightgrey;
   background-color: #2F2F34;
-  width: 80%;
-  margin-bottom: 2vh;
-  padding: .25vh;
+  width: 70%;
+  height: 2vh;
+  margin: .5vh 0 1vh 0;
 }
-
-.searchblock p{
-  color: grey;
-  margin-left: .5rem;
-}  
 
 .colorblock {
   display: flex;
@@ -925,6 +922,7 @@ label{
 }
 
 .name{
+  margin-left: .5vh;
   color: black;
 }  
 
@@ -991,15 +989,14 @@ label{
   color: grey;
 }
 
-
-
-
-
-
-
-
-
-
+#save {
+  align-self: center;
+  margin-top: 3.5vh;
+  height: 5vh;
+  width: 18vh;
+  border-style: double;
+  border-color: black;
+}
 
 .horizontalFlex p{
   font-size: 1.5rem;
