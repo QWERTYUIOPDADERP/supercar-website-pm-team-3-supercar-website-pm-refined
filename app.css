@@ -726,6 +726,7 @@ label{
   flex-direction: column;
   margin: 5%;
   /* margin-top: 2vh; */
+  height: 70vh;
   width: 30%;
   background-color: grey;
   padding: 2vh ;
@@ -814,7 +815,7 @@ label{
   color: lightgrey;
   background-color: #2F2F34;
   width: 80%;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
   padding: .25vh;
 }
 
@@ -826,11 +827,17 @@ label{
 .colorblock {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding-top: 1vh;
 }  
 
-.color {
-  padding: 2vh;
+.Color > p {
+  color: black;
+}
+
+.Color button{
+  height: 5vh;
+  width: 18vh;
 }
 
 .name{
@@ -839,90 +846,66 @@ label{
 
 .red {
   background-color: red;
-  height: 3vh;
-  width: 30%;
 }  
 
 .yellow {
   background-color: yellow;
-  height: 3vh;
-  width: 30%;
 }  
 
 .blue {
   background-color: blue;
-  height: 3vh;
-  width: 30%;
 }  
 
 .violet {
   background-color: violet;
-  height: 3vh;
-  width: 30%;
 }  
 
 .teal {
-  background-color: teal;
-  height: 3vh;
-  width: 30%;
+  background-color: #49e4c5;
 }  
 
 .black {
   background-color: black;
-  height: 3vh;
-  width: 30%;
 }  
 
 .silver {
   background-color: silver;
-  height: 3vh;
-  width: 30%;
 }    
 
 .orange {
   background-color: orange;
-  height: 3vh;
-  width: 30%;
 }  
 
 .green {
   background-color: green;
-  height: 3vh;
-  width: 30%;
 }  
 
 .indigo {
   background-color: indigo;
-  height: 3vh;
-  width: 30%;
 }  
 
 .pink {
   background-color: pink;
-  height: 3vh;
-  width: 30%;
 }  
 
 .navy-blue {
   background-color: navy;
-  height: 3vh;
-  width: 30%;
 }  
 
 .white {
   background-color: white;
-  height: 3vh;
-  width: 30%;
 }  
 
 .bronze {
   background-color: #CE8946;
-  height: 3vh;
-  width: 30%;
 }  
 
-
-
+#search {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: grey;
+}
 
 
 
