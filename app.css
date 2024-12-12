@@ -452,8 +452,8 @@ main{
   color: white;
   /* background-color: #323443; */
   width: 90%;
-  height: 70vh;
-  padding: 5%;
+  height: 60vh;
+  padding: 3%;
   min-width: 1000px;
 }
 
@@ -1038,6 +1038,7 @@ label{
 
 #checkOut{
   visibility: hidden;
+  margin-top: 5vh;
 }
 
 .lightgrey div:last-of-type{
