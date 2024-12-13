@@ -70,12 +70,12 @@ function setPageInformation(value){
   switch (value) {
     case "blackwidow":
       // title.innerText = "Nemesis"
-      bigImage.src="images/instagram/trionblacksupercar4.jpg"
-      bigImage.alt="A black car hidden in shadow facing the camera head on"
+      bigImage.src="images/instagram/triongraysupercars2.jpg"
+      bigImage.alt="A grey car hidden in shadow facing away from the camera"
       smallImage1.src="images/instagram/trionblacksupercar.jpg"
       smallImage1.alt="A black car viewed at an angle on a white background"
       smallImage2.src="images/instagram/trionblacksupercar2.jpg"
-      smallImage2.src="A low riding black car sitting in front of a city"
+      smallImage2.alt="A low riding black car sitting in front of a city"
       smallImage3.src="images/instagram/trionblacksupercars3.jpg"
       smallImage3.alt="A close up of the back and spoiler of a black car"
       smallImage4.src="images/instagram/trionsupercarblack6.jpg"
