@@ -115,19 +115,24 @@ function setPageInformationItem(value){
     image.src="images/merchandise/"+value+".jpg"
     switch (value) {
       case "polo-yellow-collar":
+        image.alt = "A black polo with a yellow collar."
         desc.innerText="Elevate your style with our sleek and sophisticated Black Polo with a Yellow Collar. This classic polo shirt is designed for those who appreciate a touch of elegance and a pop of color in their wardrobe. Crafted from a blend of high-quality cotton and polyester, this polo offers exceptional comfort and durability. The striking yellow collar adds a vibrant contrast to the timeless black body, making it a standout piece in any casual or semi-formal setting."
         break;
       case "polo-green-collar":
+        image.alt="A black polo with a green collar."
         desc.innerText="Elevate your style with our sleek and sophisticated Black Polo with a Green Collar. This classic polo shirt is designed for those who appreciate a touch of elegance and a pop of color in their wardrobe. Crafted from a blend of high-quality cotton and polyester, this polo offers exceptional comfort and durability. The striking green collar adds a vibrant contrast to the timeless black body, making it a standout piece in any casual or semi-formal setting."
         break;
       case "suit":
+        image.alt="A gray suit with a gold tie."
         desc.innerText="Elevate your style with our sleek and sophisticated suit. This classic suit is designed for those who appreciate a touch of elegance and a pop of color in their wardrobe. The striking yellow collar adds a vibrant contrast to the timeless black body, making it a standout piece in any formal setting. Perfect for business meetings, formal events, or special occasions. Experience the perfect blend of comfort, style, and versatility with this exceptional piece."
         break;
       case "baseball-cap":
+        image.alt="A black baseball cap."
         desc.innerText="Introducing our baseball cap: the perfect blend of style and comfort! Crafted from high-quality, breathable cotton, this cap features a timeless design with a slightly distressed finish for that authentic, worn-in look. The adjustable strap ensures a perfect fit for all head sizes, while the curved brim provides excellent sun protection. Whether you're hitting the ballpark, running errands, or just looking to add a touch of casual cool to your outfit, this cap is your go-to accessory."
         break;
       case "straw-beach-hat":
-        desc.innerText="Introducing our Elegant Straw Beach Hat – the ultimate accessory for your sunny adventures! Handwoven from premium natural straw, this hat boasts a wide brim that offers excellent sun protection while adding a touch of sophistication to your beachwear. The lightweight and breathable design ensures maximum comfort, even on the hottest days. With its chic ribbon band and adjustable inner drawstring, this hat provides a secure and stylish fit for all head sizes."
+        image.alt="A straw hat with a green ribbon."
+        desc.innerText="Introducing our Elegant Straw Beach Hat - the ultimate accessory for your sunny adventures! Handwoven from premium natural straw, this hat boasts a wide brim that offers excellent sun protection while adding a touch of sophistication to your beachwear. The lightweight and breathable design ensures maximum comfort, even on the hottest days. With its chic ribbon band and adjustable inner drawstring, this hat provides a secure and stylish fit for all head sizes."
         break;
       default:
         desc.innerText="Item does not exist"

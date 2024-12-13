@@ -322,7 +322,7 @@ main{
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 8vh;
+  padding: 8vh 0;
   background-color: #212331;
 }
 
@@ -358,6 +358,7 @@ main{
 
 /* Hide the images by default */
 .mySlides {
+  margin: 0 8vh;
   height: 70vh;
   display: none;
   object-fit: cover;
@@ -834,6 +835,8 @@ label{
   display: flex;
   flex-flow: column;
   width: 23%;
+  min-width: 300px;
+  max-width: 480px;
   align-items: flex-start;
 }
 
