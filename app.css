@@ -783,8 +783,10 @@ label{
 
 #customization{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
+  overflow-y: auto;
   margin: 5%;
+  padding: 20px;
   /* margin-top: 2vh; */
   width: 35%;
   height: 70vh;
@@ -941,6 +943,10 @@ label{
   min-width: 180px;
   width: 100%;
   cursor: pointer;
+}
+
+.Color{
+  margin: 0 15px;
 }
 
 .name{
