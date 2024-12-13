@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Trion</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" type="image/x-icon" href="images/logo/trion-favicon-new.png">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="hamburger" href="javascript:void(0)" onclick="openNavWithFocus('close')"><img src="icons/menu.png" alt="hamburger menu icon"></a>
+            <a id="trionName" href="index.html">Trion</a>
+            <div>
+                <a id="cartButton" href="cart.html"><img src="icons/cart.png" alt="Cart">
+                    <p id="cartNumber"></p>
+                </a>
+                <a id="user" href="javascript:void(0)"><img src="icons/account.png" onclick="openNavWithFocus('account')" alt="Profile"></a>
+            </div>
+        </nav>
+    </header>
+    <div id="sidebar" class="sidenav">
+        <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="javascript:void(0)">Cars >></a>
+                <ul class="dropdown" aria-label="submenu">
+                    <li><a href="nemesis.html">Nemesis</a></li>
+                    <li><a href="blackwidow.html">Black Widow</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0)">Merchandise >></a>
+                <ul class="dropdown" aria-label="submenu">
+                    <li><a href="merchandise.html">Browse All</a></li>
+                    <li><a href="merchandiseMen.html">Men's</a></li>
+                    <li><a href="merchandiseWomen.html">Women's</a></li>
+                    <li><a href="merchandiseOther.html">Other</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:void(0)" id="account">Account >></a>
+                <ul class="dropdown" aria-label="submenu">
+                    <li><a href="account.html">Account Settings</a></li>
+                    <li><a href="inquiries.html">Concierge</a></li>
+                    <li><a href="orderhistory.html">Order History</a></li>
+                    <li><a href="configurations.html">Car Configurations</a></li>
+                    <li><a onclick="signout()" href="javascript:void(0)">Sign out</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </div>
+    <footer>
+        <hr>
+                <ul class="links">
+                    <li><p>Cars</p>
+                        <ul>
+                            <li><a href="nemesis.html">Nemesis</a></li>
+                            <li><a href="blackwidow.html">Black Widow</a></li>
+                        </ul>
+                    </li>
+                    <li><p>Merchandise</p>
+                        <ul>
+                            <li><a href="merchandise.html">Browse All</a></li>
+                            <li><a href="merchandiseMen.html">Men's</a></li>
+                            <li><a href="merchandiseWomen.html">Women's</a></li>
+                            <li><a href="merchandiseOther.html">Other</a></li>
+                        </ul>
+                    </li>
+                    <li><p>Account</p>
+                        <ul>
+                            <li><a href="account.html">Account Settings</a></li>
+                            <li><a href="inquiries.html">Concierge</a></li>
+                            <li><a href="orderhistory.html">Order History</a></li>
+                            <li><a href="configurations.html">Car Configurations</a></li>
+                            <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a onclick="signout()" href="javascript:void(0)">Sign out</a></li>
+                        </ul>
+                    </li>
+                    <li><p>About Us</p>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <div class="socialWrapper">
+                <p>Socials</p>
+                <ul class="socials">
+                    <li><a class="icons" href="https://www.instagram.com/trionsupercarsgroup/"><img src="icons/instagram.png"  alt="Instagram Logo"></a></li>
+                    <li><a class="icons" href="https://www.facebook.com/richard.patterson.9041/"><img src="icons/facebook.png" alt="Facebook Logo"></a></li>
+                    <li><a class="icons" href="https://twitter.com/Trion_SuperCars"><img src="icons/twitter.png" alt="X Logo"></a></li>
+                    <li><a class="icons" href="https://www.linkedin.com/in/trionsupercars"><img src="icons/linkedin.png" alt="LinkenIn Logo"></a></li>
+                </ul>
+            </div>
+    </footer>
+</body>
+
+</html>

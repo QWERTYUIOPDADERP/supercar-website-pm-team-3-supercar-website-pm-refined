@@ -1071,10 +1071,11 @@ label{
   padding: 1%;
   background-color: #323443;
 }
-
-
-
-
-
-
 /** end customize car **/
+
+.Accessibility {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 100%
+}
