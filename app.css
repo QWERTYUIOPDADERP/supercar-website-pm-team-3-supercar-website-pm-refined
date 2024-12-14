@@ -30,6 +30,7 @@ p, h1, h2, h3{
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 6vh;
+  min-width: 320px;
 }
 
 .sidenav > ul > li{
@@ -183,7 +184,7 @@ footer{
 .links {
   margin-top: 4vh;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   width: 100%;
   color: #ffffff;
@@ -194,7 +195,7 @@ footer{
 .links > li{
   margin-top: 3vh;
   padding: 0;
-  width: 15%;
+  width: 20%;
   min-width: 180px;
 }
 
@@ -249,7 +250,7 @@ hr{
   margin-bottom: 4vh;
   margin-top: 2vh;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   width: 100%;
   height: auto;
@@ -261,6 +262,9 @@ hr{
 .socials li{
   margin: 0 2.5%;
   height: auto;
+  max-width: 25%;
+  min-width: 120px;
+  flex: 1;
 }
 
 .socials img{
@@ -275,7 +279,7 @@ hr{
 
 footer a > img{
   filter: invert(0.6);
-  width: 100px;
+  width: 100%;
   border-radius: 5%;
   transition: all 0.2s;
 }
@@ -438,7 +442,8 @@ main{
 }
 
 .twoEvenRow img{
-  width: 50%;
+  flex: 1;
+  min-width: 250px;
   object-fit: cover;
   padding: 3%;
 }
@@ -450,13 +455,12 @@ main{
 
 .twoEvenRow{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   color: white;
   /* background-color: #323443; */
   width: 90%;
-  height: 60vh;
+  height: auto;
   padding: 3%;
-  min-width: 1000px;
 }
 
 /* Fading animation */
@@ -648,6 +652,8 @@ h2{
 
 /** Customize car **/
 .twoEvenRow .column{
+  flex: 1;
+  min-width: 250px;
   padding: 3%;
   padding-top: 5%;
 
@@ -657,28 +663,7 @@ h2{
   display: flex;
   flex-flow: column;
   align-items: center;
-  height: 45vh;
-  width: 80%;
-  color: white;
-}
-
-.onePartColumn a{
-  margin-top: 10px;
-}
-
-/** Customize car **/
-
-.twoEvenRow .column{
-  padding: 3%;
-  padding-top: 5%;
-
-}
-
-.onePartColumn{
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  height: 45vh;
+  height: auto;
   width: 80%;
   color: white;
 }
@@ -826,7 +811,7 @@ label{
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 
@@ -896,13 +881,15 @@ label{
 }
 
 #merchandiseItemImage{
+  min-width: 250px;
   width: 50%;
+  flex: 1;
   margin-bottom: 2vh;
 }
 
 .horizontalFlex{
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: space-around;
   width: 80%;
   margin: 1%;
@@ -1047,9 +1034,11 @@ label{
 
 .itemColumn{
   padding: 2vh 0;
+  flex: 1;
   display: flex;
   flex-flow: column;
   width: 40%;
+  min-width: 250px;
 }
 
 #checkOut{
