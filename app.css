@@ -262,9 +262,9 @@ hr{
 .socials li{
   margin: 0 2.5%;
   height: auto;
-  max-width: 25%;
-  min-width: 120px;
-  flex: 1;
+  min-width: 100px;
+  width: 100%;
+  max-width: 150px;
 }
 
 .socials img{
@@ -737,7 +737,7 @@ label{
   flex-flow: column;
   height: 80vh;
   width: 50%;
-  flex: 1;
+  flex: 2;
   min-width: 500px;
   padding: 2%;
   background-color: #323443;
@@ -1104,6 +1104,9 @@ label{
   #customization{
     width: 100%;
     min-width: 250px;
+  }
+  .imageSection{
+    flex: 1;
   }
 }
 
