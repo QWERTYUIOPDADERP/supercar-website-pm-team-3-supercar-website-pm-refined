@@ -341,7 +341,8 @@ main{
   align-content: space-evenly;
   align-items: center;
   display: flex;
-  flex-flow: row;
+  height: 80vh;
+  flex-flow: row wrap;
   color: white;
 }
 
@@ -353,7 +354,7 @@ main{
 
 /* Slideshow container */
 .slideshow-container {
-  overflow: hidden;
+  overflow: visible;
   max-width: 100%;
   width: 100%;
   position: relative;
@@ -362,13 +363,15 @@ main{
 
 /* Hide the images by default */
 .mySlides {
-  margin: 0 8vh;
-  height: 70vh;
+  margin: 0 5%;
+  height: fit-content;
   display: none;
   object-fit: cover;
 }
 
 .slideContent img{
+  min-width: 320px;
+  flex: 1;
   width: 50%;
   height: 100%;
   object-fit: cover;
@@ -477,8 +480,10 @@ main{
 .column{
   display: flex;
   flex-flow: column;
+  flex: 1;
   padding: 3%;
   height: 100%;
+  min-width: 320px;
 }
 
 .column p{
@@ -730,8 +735,10 @@ label{
   align-items: center;
   display: flex;
   flex-flow: column;
-  height: 100%;
-  width: 80%;
+  height: 80vh;
+  width: 50%;
+  flex: 1;
+  min-width: 500px;
   padding: 2%;
   background-color: #323443;
 }
@@ -767,11 +774,13 @@ label{
 }
 
 #customization{
+  flex: 1;
   display: flex;
   flex-flow: column nowrap;
   overflow-y: auto;
   margin: 5%;
   padding: 20px;
+  min-width: 220px;
   /* margin-top: 2vh; */
   width: 35%;
   height: 70vh;
@@ -781,9 +790,9 @@ label{
 .horizontal{
   background-color: #323443;
   width: 100%;
-  height: 95vh;
+  height: fit-content;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
 }
 
 
@@ -909,8 +918,7 @@ label{
   align-self: center;
   background-color: #2F2F34;
   width: 70%;
-  height: 2vh;
-  padding: 0.5%;
+  padding: 2%;
   margin: .5vh 0 1vh 0;
 }
 
@@ -1067,4 +1075,62 @@ label{
   height: auto;
   cursor: pointer;
   border-radius: 100%
+}
+
+@media only screen and (max-width: 1020px) {
+  .heroRow h1{
+    font-size: 5rem;
+    left: 30%;
+    width: 100%;
+    text-align: center;
+  }
+  h1{
+    font-size: 4rem;
+    text-align: center;
+  }
+  .heroRow h1{
+    font-size: 5rem;
+    left: 30%;
+    width: 100%;
+    text-align: center;
+  }
+  .lightgrey div:last-of-type{
+    visibility: hidden;
+    height: 0;
+  }
+  .horizontal{
+    justify-content: center;
+  }
+  #customization{
+    width: 100%;
+    min-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .slideContent img {
+    height: 70vh;
+    min-width: 100%;
+  }
+  .heroRow h1{
+    font-size: 5rem;
+    left: 50%;
+  }
+  .slideContent{
+    height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #user{
+    visibility:hidden;
+    width:0;
+  }
+  #cartButton{
+    left:80px;
+  }
+  .imageSection{
+    min-width: 200px;
+    width: 100%;
+  }
 }
