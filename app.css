@@ -507,7 +507,7 @@ main{
 }
 
 .arrow-pulse-down:after {
-  content: "🡣"; /* Here you can change the style of the arrow */
+  content: "↓"; /* Here you can change the style of the arrow */
   color: white;
   position: absolute;
   width: 35px; height: 35px;
