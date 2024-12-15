@@ -581,50 +581,15 @@ h2{
   background-position-x: -5vh;
 }
 
-.aboutRich{
-  width: 95%;
-  display: flex;
-  flex-flow: row nowrap;
-  color: white;
-  margin-bottom: 5vh;
-  height: fit-content
-}
-
-.aboutRich img{
-  width: 45%;
-  margin: 2.5%;
-  height: auto;
-}
-
-#aboutRich {
-  width: 45%;
-  margin: 2.5%;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
-#aboutRich h1 {
-  margin-bottom: 5vh;
-  align-self: flex-start;
-}
-
-#aboutRich p{
-  align-self: center;
-  font-size: 1.25rem;
-}
-
-.aboutRich img {
-  width: 42vw;
-  object-fit: cover;
-  height: auto;
-}
-
 .aboutimages{
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+}
+
+#aboutRich{
+  flex: 1;
 }
 
 .aboutimages img{
@@ -640,6 +605,12 @@ h2{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.aboutrowimages div{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .aboutext{
@@ -1137,6 +1108,6 @@ label{
     width: 100%;
   }
   h1{
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 }
