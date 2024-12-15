@@ -1042,14 +1042,40 @@ label{
 }
 /** end customize car **/
 
-.Accessibility {
-  width: 50px;
-  height: auto;
-  cursor: pointer;
-  border-radius: 100%
+.accessibilityblock {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 80vh;
 }
 
-@media only screen and (max-width: 1020px) {
+.accessibilitysquare {
+  margin: 2vh;
+  justify-content: center;
+}
+
+.accessibilityimage{
+  display: flex;
+  justify-content: center;
+  width: 157px;
+  height: 157px;
+  border-radius: 10%;
+  background-image: url(icons/Rectangle.jpg);
+  cursor: pointer;
+}
+
+.accessibilityimg{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.accessibilitytext {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
   .heroRow h1{
     font-size: 5rem;
     left: 30%;
