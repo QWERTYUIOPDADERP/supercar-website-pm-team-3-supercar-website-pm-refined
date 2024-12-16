@@ -870,7 +870,7 @@ label{
 }
 
 #merchandiseItemImage{
-  min-width: 250px;
+  min-width: 300px;
   width: 50%;
   flex: 1;
   margin-bottom: 2vh;
@@ -1021,12 +1021,12 @@ label{
 }
 
 .itemColumn{
-  padding: 2vh 0;
+  padding: 2vh 5%;
   flex: 1;
   display: flex;
   flex-flow: column;
   width: 40%;
-  min-width: 250px;
+  min-width: 350px;
 }
 
 #checkOut{
@@ -1047,6 +1047,10 @@ label{
   height: auto;
   padding: 1%;
   background-color: #323443;
+}
+
+.cartItem .column{
+  height: 70vh;
 }
 /** end customize car **/
 
