@@ -598,6 +598,12 @@ h2{
   height: 40vh;
   width: 95%;
   object-fit: cover;
+  cursor: pointer;
+}
+
+.aboutimages img:hover{
+  transition-duration: 250ms;
+  opacity: 0.4;
 }
 
 .aboutrowimages {
@@ -609,6 +615,7 @@ h2{
 }
 
 .aboutrowimages div{
+  padding: 0 1% 0 1%;
   display: flex;
   flex-flow: column;
   align-items: center;
