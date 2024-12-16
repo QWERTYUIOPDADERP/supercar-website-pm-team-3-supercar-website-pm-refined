@@ -30,7 +30,7 @@ p, h1, h2, h3{
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 6vh;
-  min-width: 320px;
+  min-width: 0px;
 }
 
 .sidenav > ul > li{
