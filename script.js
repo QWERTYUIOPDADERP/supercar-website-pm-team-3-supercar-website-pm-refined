@@ -3,6 +3,7 @@ function openNav() {
   document.getElementById("sidebar").style.width = "25%";
   // document.getElementById("body").style.marginLeft = "25%";
   document.getElementById("sidebar").style.visibility = "visible";
+  document.getElementById("sidebar").style.minWidth = "320px";
   setTimeout(() => {
     document.getElementById("close").focus();
     clearTimeout();
@@ -13,6 +14,7 @@ function openNavWithFocus(focus) {
   document.getElementById("sidebar").style.width = "25%";
   // document.getElementById("body").style.marginLeft = "25%";
   document.getElementById("sidebar").style.visibility = "visible";
+  document.getElementById("sidebar").style.minWidth = "320px";
   setTimeout(() => {
     document.getElementById(focus).focus();
     clearTimeout();
@@ -21,6 +23,7 @@ function openNavWithFocus(focus) {
 
 function closeNav() {
   document.getElementById("sidebar").style.width = "0";
+  document.getElementById("sidebar").style.minWidth = "0px";
   // document.getElementById("header").style.marginLeft= "0";
   // setTimeout(() => {
   document.getElementById("sidebar").style.visibility = "hidden";  
