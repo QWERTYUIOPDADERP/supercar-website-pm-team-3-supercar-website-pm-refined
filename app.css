@@ -1069,7 +1069,6 @@ label{
   border-radius: 10%;
   background-image: url(icons/Rectangle.jpg);
   cursor: pointer;
-  opacity: 0.4;
 }
 
 .accessibilityimage:hover {
