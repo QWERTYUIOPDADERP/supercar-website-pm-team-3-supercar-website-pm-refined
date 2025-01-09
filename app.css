@@ -156,7 +156,7 @@ nav div a{
 
 body{
   /* margin-top: 5.5vh; */
-  background-color: #323443;
+  background-color: #212331;
 }
 
 #hamburger {
@@ -602,11 +602,6 @@ h2{
   cursor: pointer;
 }
 
-.aboutimages img:hover{
-  transition-duration: 250ms;
-  opacity: 0.4;
-}
-
 .aboutrowimages {
   margin: 5vh 0;
   width: auto;
@@ -674,7 +669,8 @@ label{
   flex-flow: column;
 }
 
-.form form{
+.form form,
+#checkoutForm form{
   margin-top: 5vh;
   width: 90%;
   align-self: center;
@@ -684,7 +680,8 @@ label{
   font-size: 2.1rem;
 }
 
-.form textarea{
+.form textarea,
+#checkoutForm textarea{
   margin-bottom: 3vh;
   padding: 1%;
   width: 100%;
@@ -698,11 +695,25 @@ label{
   top: 0;
 }
 
-.form input{
+.form input,
+#checkoutForm input{
   margin-top: 2vh;
   width: fit-content;
   font-size: 2.1vh;
   padding: 1%;
+}
+
+#checkoutForm{
+  margin-bottom: 5vh;
+  margin-left: 5%;
+  width: 90%;
+  background-color:#323443;
+  font-size: 2rem;
+}
+
+#checkoutForm input{
+  margin-top: 0;
+  margin-bottom: 3vh;
 }
 
 .blackwidow{
@@ -775,6 +786,25 @@ label{
   flex-flow: row wrap;
 }
 
+.collapse{
+  background-color: #717171;
+  margin-top: 5vh;
+}
+
+.collapse .horizontal{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  align-items: center;
+  width: 90%;
+  justify-content: space-evenly;
+  background-color: #616161;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.collapseButton{
+  height:fit-content;
+}
 
 .sideScrollRow{
   width: 50%;
@@ -802,7 +832,6 @@ label{
   flex-flow: row wrap;
   justify-content: center;
 }
-
 
 .merchItem{
   padding: 1%;
@@ -903,10 +932,12 @@ label{
 }
 
 .colorblock {
+  font-size: 1.5rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   padding-top: 1vh;
+  margin-bottom: 3vh;
 }  
 
 .Color > p {
@@ -925,7 +956,7 @@ label{
 }
 
 .name{
-  margin-top: 5vh;
+  font-size: 2rem;
   margin-left: .5vh;
   color: black;
 }  
@@ -995,6 +1026,7 @@ label{
 }
 
 #save {
+  font-size: 1.5rem;
   padding: 10px;
   align-self: center;
   margin-top: 3.5vh;
@@ -1090,6 +1122,16 @@ label{
 .accessibilitytext {
   display: flex;
   justify-content: center;
+}
+
+#checkoutForm{
+  /* position: absolute; */
+}
+
+aside{
+  display: flex;
+  flex-flow: column;
+  background-color: #212331;
 }
 
 @media only screen and (max-width: 1024px) {

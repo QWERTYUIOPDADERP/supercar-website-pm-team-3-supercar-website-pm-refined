@@ -53,8 +53,20 @@
     </div>
     <main id="main">
         <h1 id="cartItems">No Items:</h1>
-        <a class="button" id="checkOut" href="javascript:void(0)">Check Out</a>
     </main>
+    <aside id="checkoutForm">
+        <form>
+            <label for="name">Name:</label><br>
+            <textarea id="name" name="name" placeholder="John Doe"></textarea><br>
+            <label for="num">Card Number:</label><br>
+            <textarea id="num" name="num" placeholder="5555 5555 5555 4444"></textarea><br>
+            <label for="expDate">Expiration Date:</label><br>
+            <textarea id="expDate" name="expDate" placeholder="07/35"></textarea><br>
+            <label for="code">Security Code:</label><br>
+            <textarea id="code" name="code" placeholder="888"></textarea><br>
+            <input type="submit" value="Check Out" onclick="clearCart()">
+        </form>
+    </aside>
     <footer>
         <hr>
             <ul class="links">

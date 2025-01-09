@@ -184,13 +184,15 @@ function updateCart(){
 
 function cartItems(){
   const items = document.getElementById('cartItems')
-  const checkout = document.getElementById('checkOut')
+  const checkout = document.getElementById('checkoutForm')
   if(localStorage.getItem("items") === null || localStorage.getItem("items") === "[]"){
     items.innerText="No items"
     checkout.style.visibility = "hidden"
+    checkout.style.maxHeight = "5vh"
   } else{
     items.innerText="Items:"
     checkout.style.visibility = "visible"
+    checkout.style.maxHeight = "auto"
   }
 }
 
@@ -207,6 +209,16 @@ function removeItem(obj){
   updateCart()
 }
 
+function clearCart(){
+  let items = []
+  if (localStorage.getItem("items") === null) {
+  } else {
+    localStorage.setItem("items",JSON.stringify(items))
+  }
+  updateCart()
+  popup("Items Successfully Purchased")
+}
+
 function onCartStart(){
   updateCart()
 }
@@ -218,7 +230,6 @@ function createButton(){
   }
   let ammount = JSON.parse(localStorage.getItem("items")).length
   for (var i = 0; i < ammount; i++) {
-    var checkout = document.getElementById('checkOut')
     var section = document.createElement("div")
     var txt = document.createElement("a");
     var btn = document.createElement("button")
@@ -256,7 +267,7 @@ function createButton(){
     section.appendChild(column)
     section.appendChild(btn)
 
-    checkout.before(section)
+    main.appendChild(section)
     btn.onclick = function() { removeItem(this.id) }
   }
 }
@@ -291,6 +302,16 @@ function setUsername(){
     document.getElementById("username").innerText=localStorage.getItem("name")
   } else {
     document.getElementById("username").innerText="Not logged in"
+  }
+}
+
+function toggleColorBlock1(){
+  let toggle = document.getElementById("exteriorToggle");
+  let colors = document.getElementById("exteriorColors");
+  if(toggle.checked){
+    colors.style.display = "flex";
+  } else {
+    colors.style.display = "none";
   }
 }
 
