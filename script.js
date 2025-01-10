@@ -250,6 +250,27 @@ function createButton(){
     txt.href="merchandiseItem.html?item="+JSON.parse(localStorage.getItem("items"))[i]
     img.src="images/merchandise/"+JSON.parse(localStorage.getItem('items'))[i]+".jpg"
 
+    switch (JSON.parse(localStorage.getItem('items'))[i]) {
+      case "polo-yellow-collar":
+        img.alt = "A black polo with a yellow collar."
+        break;
+      case "polo-green-collar":
+        img.alt="A black polo with a green collar."
+        break;
+      case "suit":
+        img.alt="A gray suit with a gold tie."
+        break;
+      case "baseball-cap":
+        img.alt="A black baseball cap."
+        break;
+      case "straw-beach-hat":
+        img.alt="A straw hat with a green ribbon."
+        break;
+      default:
+        img.alt="Item does not exist"
+        break;
+    }
+
     const words = JSON.parse(localStorage.getItem("items"))[i].split("-");
 
     for (let i = 0; i < words.length; i++) {
@@ -306,12 +327,19 @@ function setUsername(){
 }
 
 function toggleColorBlock1(){
-  let toggle = document.getElementById("exteriorToggle");
-  let colors = document.getElementById("exteriorColors");
-  if(toggle.checked){
-    colors.style.display = "flex";
+  let exToggle = document.getElementById("exteriorToggle");
+  let inToggle = document.getElementById("interiorToggle");
+  let exColors = document.getElementById("exteriorColors");
+  let inColors = document.getElementById("interiorColors");
+  if(inToggle.checked){
+    inColors.style.display = "flex";
   } else {
-    colors.style.display = "none";
+    inColors.style.display = "none";
+  }
+  if(exToggle.checked){
+    exColors.style.display = "flex";
+  } else {
+    exColors.style.display = "none";
   }
 }
 

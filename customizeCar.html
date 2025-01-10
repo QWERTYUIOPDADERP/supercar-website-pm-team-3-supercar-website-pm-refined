@@ -69,7 +69,8 @@
                 <div class="collapse">
                     <div class="horizontal">
                         <h3 class="name">Exterior Colors</h3>
-                        <input id="exteriorToggle" class="collapseButton" type="checkbox" checked="checked" onclick="toggleColorBlock1()">
+                        <input title="exToggle" id="exteriorToggle" class="collapseButton" type="checkbox" checked="checked" onclick="toggleColorBlock1()">
+                        <label class="test-label" for="exteriorToggle"></label>
                     </div>
                     <div id="exteriorColors" class="colorblock">
                         <div class="Color">
@@ -131,8 +132,12 @@
                     </div>
                 </div>
                 <div class="collapse">
-                    <h3 class="name">Interior Colors</h3>
-                    <div class="colorblock">
+                    <div class="horizontal">
+                        <h3 class="name">Interior Colors</h3>
+                        <input title="inToggle" id="interiorToggle" class="collapseButton" type="checkbox" checked="checked" onclick="toggleColorBlock1()">
+                        <label class="test-label" for="interiorToggle"></label>
+                    </div>
+                    <div id="interiorColors" class="colorblock">
                         <div class="Color">
                             <p><strong>Red</strong></p>
                                 <button class="red"></button>
@@ -191,7 +196,7 @@
                         </div>
                     </div>
                 </div>
-                <button id="save">Save</button>
+                <a href="javscript:void(0)" id="save">Save</a>
                 </div>      
             </div>
     </main>
