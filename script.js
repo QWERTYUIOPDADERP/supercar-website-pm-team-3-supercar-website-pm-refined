@@ -164,6 +164,7 @@ function addToCart(value){
 
 function updateCart(){
   const cartNum = document.getElementById('cartNumber')
+  const cost = document.getElementById('cost')
   if(localStorage.getItem("items") === null || localStorage.getItem("items") === "[]" || cartNum.innerText==="0"){
     cartNum.innerText=""
     cartNum.style.backgroundColor="transparent"
@@ -178,6 +179,7 @@ function updateCart(){
   if(JSON.stringify(window.location.href).includes("cart")){
     createButton()
     cartItems()
+    cost.innerHTML="Total: $"+(JSON.parse(localStorage.getItem("items")).length*10)+".00"
   }
   // cartNum.innerText="test"
 }
