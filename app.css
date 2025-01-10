@@ -1138,7 +1138,8 @@ aside{
 }
 
 input[type="checkbox"]{
-  display: none;
+  width: 1px;
+  height: 1px;
 }
 
 .test-label{
@@ -1148,7 +1149,7 @@ input[type="checkbox"]{
 
 .test-label::after {
   font-family: 'Courier New', Courier, monospace;
-  content: "-";
+  content: "+";
   color: black;
   height:13px;
   aspect-ratio: 1/1;
@@ -1161,9 +1162,13 @@ input[type="checkbox"]{
   border-radius: 2px;
 }
 
+.test-label:hover{
+  cursor: pointer;
+}
+
 input[type="checkbox"]:checked + .test-label::after {
   background-color: white;
-  content: "+";
+  content: "-";
 }
 
 @media only screen and (max-width: 1024px) {

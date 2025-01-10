@@ -69,130 +69,130 @@
                 <div class="collapse">
                     <div class="horizontal">
                         <h3 class="name">Exterior Colors</h3>
-                        <input title="exToggle" id="exteriorToggle" class="collapseButton" type="checkbox" checked="checked" onclick="toggleColorBlock1()">
+                        <input title="Toggle Exterior Color Section" id="exteriorToggle" class="collapseButton" type="checkbox" checked="checked" onclick="toggleColorBlock1()">
                         <label class="test-label" for="exteriorToggle"></label>
                     </div>
                     <div id="exteriorColors" class="colorblock">
                         <div class="Color">
                             <p><strong>Red</strong></p>
-                                <button class="red"></button>
+                                <button title="Red" class="red"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Orange</strong></p>
-                                <button class="orange"></button>
+                                <button title="Orange" class="orange"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Yellow</strong></p>
-                                <button class="yellow"></button>
+                                <button title="Yellow" class="yellow"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Green</strong></p>
-                                <button class="green"></button>
+                                <button title="Green" class="green"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Blue</strong></p>
-                                <button class="blue"></button>
+                                <button title="Blue" class="blue"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Indigo</strong></p>
-                                <button class="indigo"></button>
+                                <button title="Indigo" class="indigo"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Violet</strong></p>
-                                <button class="violet"></button>
+                                <button title="Violet" class="violet"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Pink</strong></p>
-                                <button class="pink"></button>
+                                <button title="Pink" class="pink"></button>
                         </div>                        
                         <div class="Color">
                             <p><strong>Teal</strong></p>
-                                <button class="teal"></button>
+                                <button title="Teal" class="teal"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Navy</strong></p>
-                                <button class="navy-blue"></button>
+                                <button title="Navy" class="navy-blue"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Black</strong></p>
-                                <button class="black"></button>
+                                <button title="Black" class="black"></button>
                         </div>
                         <div class="Color">
                             <p><strong>White</strong></p>
-                                <button class="white"></button>
+                                <button title="White" class="white"></button>
                         </div>                        
                         <div class="Color">
                             <p><strong>Silver</strong></p>
-                                <button class="silver"></button>
+                                <button title="Silver" class="silver"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Bronze</strong></p>
-                                <button class="bronze"></button>
+                                <button title="Bronze" class="bronze"></button>
                         </div>
                     </div>
                 </div>
                 <div class="collapse">
                     <div class="horizontal">
                         <h3 class="name">Interior Colors</h3>
-                        <input title="inToggle" id="interiorToggle" class="collapseButton" type="checkbox" checked="checked" onclick="toggleColorBlock1()">
+                        <input title="Toggle Interior Color Section" id="interiorToggle" class="collapseButton" type="checkbox" checked="checked" onclick="toggleColorBlock1()">
                         <label class="test-label" for="interiorToggle"></label>
                     </div>
                     <div id="interiorColors" class="colorblock">
                         <div class="Color">
                             <p><strong>Red</strong></p>
-                                <button class="red"></button>
+                                <button title="Red" class="red"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Orange</strong></p>
-                                <button class="orange"></button>
+                                <button title="Orange" class="orange"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Yellow</strong></p>
-                                <button class="yellow"></button>
+                                <button title="Yellow" class="yellow"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Green</strong></p>
-                                <button class="green"></button>
+                                <button title="Green" class="green"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Blue</strong></p>
-                                <button class="blue"></button>
+                                <button title="Blue" class="blue"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Indigo</strong></p>
-                                <button class="indigo"></button>
+                                <button title="Indigo" class="indigo"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Violet</strong></p>
-                                <button class="violet"></button>
+                                <button title="Violet" class="violet"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Pink</strong></p>
-                                <button class="pink"></button>
+                                <button title="Pink" class="pink"></button>
                         </div>                        
                         <div class="Color">
                             <p><strong>Teal</strong></p>
-                                <button class="teal"></button>
+                                <button title="Teal" class="teal"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Navy</strong></p>
-                                <button class="navy-blue"></button>
+                                <button title="Navy" class="navy-blue"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Black</strong></p>
-                                <button class="black"></button>
+                                <button title="Black" class="black"></button>
                         </div>
                         <div class="Color">
                             <p><strong>White</strong></p>
-                                <button class="white"></button>
+                                <button title="White" class="white"></button>
                         </div>                        
                         <div class="Color">
                             <p><strong>Silver</strong></p>
-                                <button class="silver"></button>
+                                <button title="Silver" class="silver"></button>
                         </div>
                         <div class="Color">
                             <p><strong>Bronze</strong></p>
-                                <button class="bronze"></button>
+                                <button title="Bronze" class="bronze"></button>
                         </div>
                     </div>
                 </div>
@@ -247,6 +247,16 @@
         onStart()
         const params = new Proxy(new URLSearchParams(window.location.search), {
             get: (searchParams, prop) => searchParams.get(prop),
+        });
+        document.getElementById("exteriorToggle").addEventListener("keydown", function (event) {
+            if (event.keyCode === 13) {
+                document.getElementById("exteriorToggle").click();
+            }
+        });
+        document.getElementById("interiorToggle").addEventListener("keydown", function (event) {
+            if (event.keyCode === 13) {
+                document.getElementById("interiorToggle").click();
+            }
         });
         // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
         let value = params.car; // "some_value"
