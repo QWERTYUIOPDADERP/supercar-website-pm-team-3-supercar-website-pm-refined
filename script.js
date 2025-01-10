@@ -232,8 +232,10 @@ function createButton(){
   for (var i = 0; i < ammount; i++) {
     var section = document.createElement("div")
     var txt = document.createElement("a");
+    var txt2 = document.createElement("h2");
     var btn = document.createElement("button")
     var column = document.createElement("div")
+    var column2 = document.createElement("div")
     var img = document.createElement("img")
 
     btn.id = "removeCartItem"+i
@@ -242,8 +244,12 @@ function createButton(){
     section.className = "cartItem twoEvenRow"
     txt.id = "itemText"+i
     txt.className = "itemText"
+    txt2.id = "itemTextTwo"+i
+    txt2.className = "itemText2"
     column.id = "itemColumn"+i
     column.className = "itemColumn column"
+    column2.id = "itemColumnTwo"+i
+    column2.className = "itemColumn2 column"
     img.id = "itemImage"+i
     img.className = "itemImage"
 
@@ -270,6 +276,7 @@ function createButton(){
         img.alt="Item does not exist"
         break;
     }
+    txt2.appendChild(document.createTextNode(img.alt))
 
     const words = JSON.parse(localStorage.getItem("items"))[i].split("-");
 
@@ -285,8 +292,16 @@ function createButton(){
     column.appendChild(txt)
     column.appendChild(img)
 
+    var cost = document.createElement("h1");
+    cost.className="middle"
+    cost.appendChild(document.createTextNode("$10"))
+
+    column2.appendChild(txt2)
+    column2.appendChild(cost)
+    column2.appendChild(btn)
+    
     section.appendChild(column)
-    section.appendChild(btn)
+    section.appendChild(column2)
 
     main.appendChild(section)
     btn.onclick = function() { removeItem(this.id) }

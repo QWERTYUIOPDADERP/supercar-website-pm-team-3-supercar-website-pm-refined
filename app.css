@@ -885,6 +885,7 @@ label{
 }
 
 .itemText{
+  padding: 0;
   font-size: 3rem;
   color: white;
   text-decoration: none;
@@ -892,6 +893,11 @@ label{
 
 .itemText:focus, .itemText:hover{
   text-decoration: underline;
+}
+
+.middle{
+  position: absolute;
+  top: 45%;
 }
 
 .twoEvenRow .itemImage{
@@ -1059,15 +1065,6 @@ label{
   object-fit: cover;
 }
 
-.itemColumn{
-  padding: 2vh 5%;
-  flex: 1;
-  display: flex;
-  flex-flow: column;
-  width: 40%;
-  min-width: 350px;
-}
-
 #checkOut{
   visibility: hidden;
   margin-top: 5vh;
@@ -1090,6 +1087,32 @@ label{
 
 .cartItem .column{
   height: 70vh;
+}
+
+.itemText2{
+  margin-bottom: 15vh;
+}
+
+.cartItem .itemColumn{
+  padding: 0;
+  flex: 3;
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  min-width: 350px;
+}
+
+.cartItem .itemColumn2{
+  padding: 2vh 5%;
+  flex: 2;
+  display: flex;
+  flex-flow: column;
+  width: 35%;
+  min-width: 350px;
+  height: auto;
+  max-height: 50vh;
+  position: relative;
+  top:15vh;
 }
 /** end customize car **/
 
@@ -1201,6 +1224,12 @@ input[type="checkbox"]:checked + .test-label::after {
   }
   .imageSection{
     flex: 1;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .cartItem .itemColumn2{
+    top: 0;
   }
 }
 
