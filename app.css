@@ -1093,6 +1093,15 @@ label{
   margin-bottom: 15vh;
 }
 
+.itemColumn{
+  padding: 3vh 5%;
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  min-width: 350px;
+}
+
 .cartItem .itemColumn{
   padding: 0;
   flex: 3;
