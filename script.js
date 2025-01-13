@@ -179,7 +179,9 @@ function updateCart(){
   if(JSON.stringify(window.location.href).includes("cart")){
     createButton()
     cartItems()
-    cost.innerHTML="Total: $"+(JSON.parse(localStorage.getItem("items")).length*10)+".00"
+    if(localStorage.getItem("items") != null || !localStorage.getItem("items") != "[]"){
+      cost.innerHTML="Total: $"+(JSON.parse(localStorage.getItem("items")).length*10)+".00"
+    }
   }
   // cartNum.innerText="test"
 }
@@ -191,7 +193,9 @@ function cartItems(){
     items.innerText="No items"
     checkout.style.visibility = "hidden"
     checkout.style.maxHeight = "5vh"
+    console.log('test')
   } else{
+    console.log('test2')
     items.innerText="Items:"
     checkout.style.visibility = "visible"
     checkout.style.maxHeight = "auto"
@@ -201,7 +205,7 @@ function cartItems(){
 function removeItem(obj){
   let items = []
   let str = obj.slice(-1);
-  if (localStorage.getItem("items") === null) {
+  if (localStorage.getItem("items") === null || localStorage.getItem("items") === "[]") {
   } else {
     items = JSON.parse(localStorage.getItem("items"))
     removeArrayItem(items,items[str])
@@ -213,7 +217,7 @@ function removeItem(obj){
 
 function clearCart(){
   let items = []
-  if (localStorage.getItem("items") === null) {
+  if (localStorage.getItem("items") === null || localStorage.getItem("items") === "[]") {
   } else {
     localStorage.setItem("items",JSON.stringify(items))
   }
@@ -230,8 +234,13 @@ function createButton(){
   for(var i = 0; i < sections.length; i++){
     sections[i].remove()
   }
-  let ammount = JSON.parse(localStorage.getItem("items")).length
-  for (var i = 0; i < ammount; i++) {
+  
+  let amount = 0;
+  if(localStorage.getItem("items") != null || !localStorage.getItem("items") != "[]"){
+    amount = JSON.parse(localStorage.getItem("items")).length
+  }
+
+  for (var i = 0; i < amount; i++) {
     var section = document.createElement("div")
     var txt = document.createElement("a");
     var txt2 = document.createElement("h2");
