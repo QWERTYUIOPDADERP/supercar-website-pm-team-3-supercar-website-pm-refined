@@ -595,6 +595,10 @@ h2{
   flex: 1;
 }
 
+#aboutRich p{
+  font-size: 1.5rem;
+}
+
 .aboutimages img{
   margin: 1%;
   height: 40vh;
