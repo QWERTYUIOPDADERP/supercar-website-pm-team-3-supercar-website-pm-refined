@@ -323,6 +323,7 @@ footer a:focus > img{
 }
 
 main{
+  border-top: 1px lightgray solid;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -550,6 +551,7 @@ main{
 
 .nemesis{
   background-image: url("images/gallery/7_25-Lux-Black-Nemesis_rr34-1024x576.png");
+  background-color: gray;
 }
 
 h2{
